@@ -747,6 +747,8 @@ footer .cpy-right span {
     background-color: var(--bg-color);
 }
 
+
+/* reponsive desing here*/
 @media (max-width:768px) {
 
     #home-section,

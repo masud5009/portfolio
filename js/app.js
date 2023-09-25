@@ -37,5 +37,15 @@ function showEcom() {
     welcome.style.display = 'none';
 }
 
+// typging animation
+var options = {
+    strings: ["Web Designer.", "Programmer.", "Web Developer."],
+    typeSpeed: 100,
+    backSpeed: 25,
+    startDelay: 0,
+    backDelay: 1500,
+    loop: true,
+    showCursor: true,
+};
 
-
+new Typed("#typing", options);
