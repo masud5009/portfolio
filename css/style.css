@@ -64,14 +64,18 @@ body {
 }
 
 #home-section:after {
-    width: 70vmin;
-    height: 70vmin;
+    width: 50vmin;
+    height: 50vmin;
     left: auto;
     right: -10vmin;
     top: auto;
     bottom: 0;
     animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
     transform-origin: 20% 20%
+}
+#skill-section:before,
+#skill-section:after {
+    content: "";
 }
 
 #content {
@@ -289,12 +293,15 @@ body {
 
 .profile-image {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 100%);
-    height: 250px;
-    width: 250px;
+    /* background-image: linear-gradient(45deg, #3023AE 0%, #FF0099 100%); */
+    background: url('../img/masud.png') no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 300px;
+    width: 300px;
     box-shadow: -10vmin 10vmin #ffffff12;
+    border: 7px solid red;
 }
-
 
 
 .title {
@@ -888,9 +895,12 @@ footer .cpy-right span {
     footer .cpy-right span {
         font-size: 1rem;
     }
-
+#profile-image-div{
+    margin-bottom: 50px;
+}
     #about-text-image {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
     }
 }
 
