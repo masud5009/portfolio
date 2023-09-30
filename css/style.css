@@ -321,6 +321,7 @@ span {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    transition: .5s;
 }
 
 .skill .card {
@@ -347,7 +348,7 @@ span {
 
 .card:hover {
     -webkit-transform: translateY(-1rem);
-    transform: translateY(-1rem)
+    transform: scale(1.1);
 }
 
 /* project section css*/
@@ -378,8 +379,8 @@ span {
 #ecom {
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    -webkit-animation: project1 1s ease-in-out forwards;
-    animation: project1 1s ease-in-out forwards;
+    -webkit-animation: project 1s ease-in-out forwards;
+    animation: project 1s ease-in-out forwards;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
 }
@@ -748,6 +749,7 @@ footer .cpy-right span {
 }
 
 
+
 /* reponsive desing here*/
 @media (max-width:768px) {
 
@@ -774,7 +776,8 @@ footer .cpy-right span {
     .self-about .say-work h2 {
         font-size: 30px;
     }
-    #skill-section{
+
+    #skill-section {
         margin-bottom: 50px;
     }
 

@@ -1,5 +1,3 @@
-
-
 // navbar scrolled js
 const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
@@ -10,32 +8,15 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
-
 // project showing js
-var welcome = document.querySelector('#welcome');
-var blog = document.querySelector('#blog');
-var pos = document.querySelector('#pos');
-var ecom = document.querySelector('#ecom');
-
-function showBlog() {
-    blog.style.display = 'block';
-    pos.style.display = 'none';
-    ecom.style.display = 'none';
-    welcome.style.display = 'none';
-}
-function showPos() {
-    pos.style.display = 'block';
-    blog.style.display = 'none';
-    ecom.style.display = 'none';
-    welcome.style.display = 'none';
-}
-function showEcom() {
-    ecom.style.display = 'block';
-    blog.style.display = 'none';
-    pos.style.display = 'none';
-    welcome.style.display = 'none';
-}
+$(document).ready(function () {
+    $('.project-btn').on('click', function () {
+        var target = $(this).data('target');
+        $("#" + target).toggle();
+        $(".project-info").not("#" + target).hide();
+      
+    });
+});
 
 // typging animation
 var options = {
