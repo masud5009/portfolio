@@ -14,7 +14,7 @@ $(document).ready(function () {
         var target = $(this).data('target');
         $("#" + target).toggle();
         $(".project-info").not("#" + target).hide();
-      
+
     });
 });
 
@@ -30,3 +30,39 @@ var options = {
 };
 
 new Typed("#typing", options);
+
+
+$(document).ready(function () {
+    $('.slider-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
