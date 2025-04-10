@@ -34,7 +34,9 @@ html {
 body {
     background: var(--bg-color);
 }
-
+.text-primary{
+    color: var(--main-color) !important;
+}
 #home-section {
     min-height: calc(100vh - 2rem);
     padding-top: 2rem;
