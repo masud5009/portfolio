@@ -1,919 +1,636 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Masud Rana | Web Developer</title>
-    <!--fontawsome cdn-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- typing animation pluging-->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">M.R</a>
-
-            <!-- Nav links for desktop -->
-            <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item px-xl-1">
-                        <a class="nav-link" href="#home-section">Home</a>
-                    </li>
-                    <li class="nav-item px-xl-1">
-                        <a class="nav-link" href="#about-section">About</a>
-                    </li>
-                    <li class="nav-item px-xl-1">
-                        <a class="nav-link" href="#skill-section">Skill</a>
-                    </li>
-                    <li class="nav-item px-xl-1">
-                        <a class="nav-link" href="#project-section">Project</a>
-                    </li>
-                    <li class="nav-item px-xl-1">
-                        <a class="nav-link" href="#contact-section">Contact</a>
-                    </li>
-                </ul>
-            </div>
-
-            <a class="btn" href="pdf/Masud Rana.pdf" id="cvBtn" target="_blank">View Resume</a>
-            <!-- Offcanvas toggle button for mobile -->
-            <button id="responsivBtn" class="navbar-toggler btn" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
-                <i class="fas fa-bars"></i>
-
-            </button>
-
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas"
-                aria-labelledby="navbarOffcanvasLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="navbarOffcanvasLabel">M.R</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home-section">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-section">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skill-section">Skill</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#project-section">Project</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact-section">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /.Offcanvas toggle button for mobile -->
-        </div>
-    </nav>
-    <!-- /.navbar -->
-
-    <main id="content">
-
-        <!-- home section -->
-        <section id="home-section" class="d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="col-lg-12 col-xl-12 col-sm-10">
-                    <div class="d-flex justify-content-between">
-                        <!-- follow icon -->
-                        <div class="follow-icon" data-aos="fade-right" data-aos-delay="600">
-                            <div class="icon">
-                                <a target="_blank" href="https://www.facebook.com/masud5009" class="nav-link"><i
-                                        class="fab fa-facebook"></i></a>
-                                <a target="_blank" href="https://www.github.com/masud5009" class="nav-link"><i
-                                        class="fab fa-github"></i></a>
-                                <a target="_blank" href="https://www.twitter.com/masud9005" class="nav-link"><i
-                                        class="fab fa-twitter"></i></a>
-                                <a target="_blank" href="https://www.linkedin.com/in/masud5009/" class="nav-link"><i
-                                        class="fab fa-linkedin-in"></i></a>
-                                <a target="_blank" href="https://wa.me/01306084771" class="nav-link">
-                                    <i class="fab fa-whatsapp"></i>
-                                </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Masud Rana | Web Developer & Designer</title>
+        <!--fontawsome cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <!-- typing animation pluging-->
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+            <link rel="stylesheet" type="text/css"
+                href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+                <!--Custom CSS-->
+                <link rel="stylesheet" href="css/style.css">
+            </head>
+            <body>
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">M.R</a>
+                        <!-- Nav links for desktop -->
+                        <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item px-xl-1">
+                                    <a class="nav-link" href="#home-section">Home</a>
+                                </li>
+                                <li class="nav-item px-xl-1">
+                                    <a class="nav-link" href="#about-section">About</a>
+                                </li>
+                                <li class="nav-item px-xl-1">
+                                    <a class="nav-link" href="#skill-section">Skill</a>
+                                </li>
+                                <li class="nav-item px-xl-1">
+                                    <a class="nav-link" href="#project-section">Project</a>
+                                </li>
+                                <li class="nav-item px-xl-1">
+                                    <a class="nav-link" href="#contact-section">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn" href="pdf/Masud Rana.pdf" id="cvBtn" target="_blank">View Resume</a>
+                        <!-- Offcanvas toggle button for mobile -->
+                        <button id="responsivBtn" class="navbar-toggler btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+                        <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas"
+                            aria-labelledby="navbarOffcanvasLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="navbarOffcanvasLabel">M.R</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#home-section">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about-section">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#skill-section">Skill</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#project-section">Project</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact-section">Contact</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <!-- small self details -->
-                        <div class="self-about col-sm-12">
-                            <div class="say-hello" data-aos="fade-right" data-aos-delay="600">
-                                <h1>Hi, I'm</h1>
-                            </div>
-                            <div class="say-name">
-                                <h2 data-aos="fade-right" data-aos-delay="600">Masud Rana <span id="typing"
-                                        class="text-danger"></span></h2>
-                            </div>
-                            <div class="say-work">
-                                <h2 data-aos="fade-left" data-aos-delay="700">I build things for the web.</h2>
-                            </div>
-                            <div class="say-text">
-                                <p data-aos="fade-up" data-aos-delay="800">Hello ! My name is Masud Rana Laravel
-                                    developer and I enjoy creating things that
-                                    live
-                                    on the internet.
-                                    <br>My interest in web development started in 2022.
-                                </p>
-                            </div>
-                            <a href="https://wa.me/01306084771" class="btn hire-btn" target="_blank" data-aos="fade-up"
-                                data-aos-delay="1000">Hire Me</a>
-                        </div>
+                        <!-- /.Offcanvas toggle button for mobile -->
                     </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- /.home section -->
-
-        <!-- About section -->
-        <section id="about-section" class="d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="title">
-                    <h1 data-aos="fade-up" data-aos-delay="500">About Me</h1>
-                </div>
-                <div class="d-flex mt-lg-5 justify-content-between align-items-center" id="about-text-image">
-                    <div class="col-lg-6" id="about-me" data-aos="fade-right" data-aos-delay="600">
-                        <p>
-                            Hello ! My name is Masud Rana.
-                            <br>
-                            I have more than <strong class="text-primary">2 years</strong> of experience in creating and managing
-                            scalable <strong class="text-primary">web applications</strong>. I am an enthusiastic <strong class="text-primary">PHP and Laravel</strong>
-                            developer. I have created and maintained themes approved by
-                            <strong class="text-primary">CodeCanyon</strong> and provided dedicated customer service. I have
-                            also worked on <strong class="text-primary">Multi-tenant SaaS projects</strong>. Additionally, I have
-                            hands-on experience building and integrating <strong class="text-primary">RESTful APIs</strong> for
-                            modern applications. With practical experience in <strong class="text-primary">AWS (S3)</strong>, I
-                            want to provide effective solutions and grow in a forward-thinking
-                            company
-                        </p>
-                        <p>
-                            I finished my CST (Computer Science & Technology) at Faridpur Polytechnic Institute. I am now studying CSE (Computer Science & Engineering) at Uttara University.
-                        </p>
-                        <p>
-                            I know several Porgraming Languages with which I have done some projects.
-                            These are mentioned below, you can scroll through the project section.
-                        </p>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="600" id="profile-image-div">
-                        <div class="float-end">
-                            <div class="profile-image"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /.About section-->
-
-        <!-- skill section -->
-        <section id="skill-section" class="d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="title">
-                    <h1 data-aos="fade-up" data-aos-delay="300">Skill</h1>
-                </div>
-                <div class="skill">
-                    <div class="row card-column" data-aos="fade-up" data-aos-delay="500">
-                        <!-- Laravel -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center align-items-center flex-column">
-                                        <div class="programing-laguage">
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
-                                                height="100" viewBox="0 0 48 48">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M47.982 23.453c.012.044.018.089.018.134v7.071a.516.516 0 0 1-.26.448l-5.934 3.417v6.772a.517.517 0 0 1-.258.447L29.16 48.874c-.029.016-.06.026-.09.037-.012.004-.023.011-.035.015a.519.519 0 0 1-.264 0c-.015-.004-.027-.012-.041-.017-.028-.01-.058-.02-.085-.035l-12.386-7.132a.517.517 0 0 1-.259-.447V20.082c0-.046.006-.091.018-.135.004-.015.013-.028.018-.043.01-.027.019-.055.033-.08.01-.017.024-.03.035-.046.015-.02.029-.042.046-.06.015-.015.034-.026.051-.039.019-.015.035-.032.057-.044l6.194-3.566a.517.517 0 0 1 .515 0l6.194 3.566c.021.013.039.029.057.044.017.013.036.024.05.038.019.02.032.04.047.061.011.016.026.029.035.046.015.025.023.053.034.08.005.015.014.028.017.044a.52.52 0 0 1 .019.134v13.25l5.16-2.972v-6.773a.52.52 0 0 1 .019-.134c.004-.016.012-.03.018-.044.01-.027.019-.055.033-.08.01-.017.024-.03.035-.046.015-.02.028-.042.046-.06.015-.015.034-.025.05-.038.02-.016.037-.033.057-.045l6.195-3.566a.516.516 0 0 1 .515 0l6.194 3.566c.022.013.038.03.058.044.016.013.034.024.05.039.017.018.03.04.046.06.011.016.025.03.034.046.015.025.024.053.034.08.006.015.014.028.018.044zm-1.014 6.907v-5.88L44.8 25.728l-2.994 1.724v5.88l5.162-2.972zm-6.194 10.637v-5.884l-2.945 1.682-8.41 4.8v5.94l11.355-6.538zM17.032 20.975v20.022l11.355 6.537v-5.938l-5.932-3.357-.002-.002-.003-.001c-.02-.012-.036-.028-.055-.043-.016-.012-.035-.023-.049-.037l-.001-.002c-.017-.016-.029-.036-.043-.054-.013-.017-.028-.032-.038-.05l-.001-.002c-.012-.02-.019-.043-.027-.065-.009-.019-.02-.037-.025-.058-.006-.025-.007-.05-.01-.076-.003-.02-.008-.038-.008-.058V23.946L19.2 22.222l-2.168-1.247zm5.678-3.863-5.16 2.97 5.159 2.97 5.16-2.97-5.16-2.97h.001zm2.684 18.537 2.993-1.723V20.975l-2.167 1.247-2.994 1.724v12.951l2.168-1.248zM41.29 20.617l-5.16 2.97 5.16 2.97 5.158-2.97-5.158-2.97zm-.517 6.835-2.994-1.724-2.167-1.248v5.88l2.993 1.723 2.168 1.249v-5.88zm-11.872 13.25 7.568-4.32 3.783-2.16-5.156-2.968-5.936 3.418-5.41 3.115 5.151 2.915z"
-                                                    fill="#FF2D20" />
-                                            </svg>
+                </nav>
+                <!-- /.navbar -->
+                <main id="content">
+                    <!-- home section -->
+                    <section id="home-section">
+                        <div class="container">
+                            <div class="col-lg-12 col-xl-12 col-sm-10">
+                                <div class="d-flex justify-content-between">
+                                    <!-- follow icon -->
+                                    <div class="follow-icon" data-aos="fade-right" data-aos-delay="600">
+                                        <div class="icon">
+                                            <a target="_blank" href="https://www.facebook.com/masud5009" class="nav-link"><i
+                                            class="fab fa-facebook"></i></a>
+                                            <a target="_blank" href="https://www.github.com/masud5009" class="nav-link"><i
+                                            class="fab fa-github"></i></a>
+                                            <a target="_blank" href="https://www.twitter.com/masud9005" class="nav-link"><i
+                                            class="fab fa-twitter"></i></a>
+                                            <a target="_blank" href="https://www.linkedin.com/in/masud5009/" class="nav-link"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                            <a target="_blank" href="https://wa.me/01306084771" class="nav-link">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
                                         </div>
-                                        <p>
-                                            Laravel
-                                        </p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- PHP -->
-                        <div class="col-lg-3 col-md-6 mb-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center align-items-center flex-column">
-                                        <div class="programing-laguage">
-
-                                            <svg x="0px" y="0px" width="100" height="100" viewBox="0 -60.5 256 256"
-                                                version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                preserveAspectRatio="xMidYMid" viewBox="0 0 48 48">
-                                                <defs>
-                                                    <radialGradient id="radialGradient-1" cx="0.8366" cy="-125.811"
-                                                        r="363.0565"
-                                                        gradientTransform="matrix(0.463 0 0 0.463 76.4644 81.9182)"
-                                                        gradientUnits="userSpaceOnUse">
-                                                        <stop offset="0" style="stop-color:#FFFFFF" />
-                                                        <stop offset="0.5" style="stop-color:#4C6B97" />
-                                                        <stop offset="1" style="stop-color:#231F20" />
-                                                    </radialGradient>
-                                                </defs>
-                                                <g>
-                                                    <ellipse fill="url(#radialGradient-1)" cx="128" cy="67.3" rx="128"
-                                                        ry="67.3" />
-                                                    <ellipse fill="#6181B6" cx="128" cy="67.3" rx="123" ry="62.3" />
-                                                    <g>
-                                                        <path fill="#FFFFFF"
-                                                            d="M152.9,87.5c0,0,6.1-31.4,6.1-31.4c1.4-7.1,0.2-12.4-3.4-15.7c-3.5-3.2-9.5-4.8-18.3-4.8h-10.6l3-15.6
-                                                                   c0.1-0.6,0-1.2-0.4-1.7c-0.4-0.5-0.9-0.7-1.5-0.7h-14.6c-1,0-1.8,0.7-2,1.6l-6.5,33.3c-0.6-3.8-2-7-4.4-9.6
-                                                                   c-4.3-4.9-11-7.4-20.1-7.4H52.1c-1,0-1.8,0.7-2,1.6L37,104.7c-0.1,0.6,0,1.2,0.4,1.7c0.4,0.5,0.9,0.7,1.5,0.7h14.7
-                                                                   c1,0,1.8-0.7,2-1.6l3.2-16.3h10.9c5.7,0,10.6-0.6,14.3-1.8c3.9-1.3,7.4-3.4,10.5-6.3c2.5-2.3,4.6-4.9,6.2-7.7l-2.6,13.5
-                                                                   c-0.1,0.6,0,1.2,0.4,1.7s0.9,0.7,1.5,0.7h14.6c1,0,1.8-0.7,2-1.6l7.2-37h10c4.3,0,5.5,0.8,5.9,1.2c0.3,0.3,0.9,1.5,0.2,5.2
-                                                                   l-5.8,29.9c-0.1,0.6,0,1.2,0.4,1.7c0.4,0.5,0.9,0.7,1.5,0.7H151C151.9,89.1,152.7,88.4,152.9,87.5z M85.3,61.5
-                                                                   c-0.9,4.7-2.6,8.1-5.1,10c-2.5,1.9-6.6,2.9-12,2.9h-6.5l4.7-24.2h8.4c6.2,0,8.7,1.3,9.7,2.4C85.8,54.2,86.1,57.3,85.3,61.5z" />
-                                                        <path fill="#FFFFFF"
-                                                            d="M215.3,42.9c-4.3-4.9-11-7.4-20.1-7.4h-28.3c-1,0-1.8,0.7-2,1.6l-13.1,67.5c-0.1,0.6,0,1.2,0.4,1.7
-                                                                   c0.4,0.5,0.9,0.7,1.5,0.7h14.7c1,0,1.8-0.7,2-1.6l3.2-16.3h10.9c5.7,0,10.6-0.6,14.3-1.8c3.9-1.3,7.4-3.4,10.5-6.3
-                                                                   c2.6-2.4,4.8-5.1,6.4-8c1.6-2.9,2.8-6.1,3.5-9.6C220.9,54.7,219.6,47.9,215.3,42.9z M200,61.5c-0.9,4.7-2.6,8.1-5.1,10
-                                                                   c-2.5,1.9-6.6,2.9-12,2.9h-6.5l4.7-24.2h8.4c6.2,0,8.7,1.3,9.7,2.4C200.6,54.2,200.9,57.3,200,61.5z" />
-                                                    </g>
-                                                    <g>
-                                                        <path fill="#000004"
-                                                            d="M74.8,48.2c5.6,0,9.3,1,11.2,3.1c1.9,2.1,2.3,5.6,1.3,10.6c-1,5.2-3,9-5.9,11.2c-2.9,2.2-7.3,3.3-13.2,3.3
-                                                                   h-8.9l5.5-28.2H74.8z M39,105h14.7l3.5-17.9h12.6c5.6,0,10.1-0.6,13.7-1.8c3.6-1.2,6.8-3.1,9.8-5.9c2.5-2.3,4.5-4.8,6-7.5
-                                                                   c1.5-2.7,2.6-5.7,3.2-9c1.6-8,0.4-14.2-3.5-18.7c-3.9-4.5-10.1-6.7-18.6-6.7H52.1L39,105z" />
-                                                        <path fill="#000004"
-                                                            d="M113.3,19.6h14.6l-3.5,17.9h13c8.2,0,13.8,1.4,16.9,4.3c3.1,2.9,4,7.5,2.8,13.9L151,87.1h-14.8l5.8-29.9
-                                                                   c0.7-3.4,0.4-5.7-0.7-6.9c-1.1-1.2-3.6-1.9-7.3-1.9h-11.7l-7.5,38.7h-14.6L113.3,19.6z" />
-                                                        <path fill="#000004"
-                                                            d="M189.5,48.2c5.6,0,9.3,1,11.2,3.1c1.9,2.1,2.3,5.6,1.3,10.6c-1,5.2-3,9-5.9,11.2c-2.9,2.2-7.3,3.3-13.2,3.3
-                                                                   h-8.9l5.5-28.2H189.5z M153.7,105h14.7l3.5-17.9h12.6c5.6,0,10.1-0.6,13.7-1.8c3.6-1.2,6.8-3.1,9.8-5.9c2.5-2.3,4.5-4.8,6-7.5
-                                                                   c1.5-2.7,2.6-5.7,3.2-9c1.6-8,0.4-14.2-3.5-18.7c-3.9-4.5-10.1-6.7-18.6-6.7h-28.3L153.7,105z" />
-                                                    </g>
-                                                </g>
-                                            </svg>
+                                    <!-- small self details -->
+                                    <div class="self-about col-sm-12">
+                                        <div class="say-hello" data-aos="fade-right" data-aos-delay="600">
+                                            <h1>Hi, I'm</h1>
                                         </div>
-                                        <p>PHP
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Javascript -->
-                        <div class="col-lg-3 col-md-6 mb-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center align-items-center flex-column">
-                                        <div class="programing-laguage">
-
-                                            <svg x="0px" y="0px" width="100px" height="100px" viewBox="0 0 32 32"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect x="2" y="2" width="28" height="28" style="fill:#f5de19" />
-                                                <path
-                                                    d="M20.809,23.875a2.866,2.866,0,0,0,2.6,1.6c1.09,0,1.787-.545,1.787-1.3,0-.9-.716-1.222-1.916-1.747l-.658-.282c-1.9-.809-3.16-1.822-3.16-3.964,0-1.973,1.5-3.476,3.853-3.476a3.889,3.889,0,0,1,3.742,2.107L25,18.128A1.789,1.789,0,0,0,23.311,17a1.145,1.145,0,0,0-1.259,1.128c0,.789.489,1.109,1.618,1.6l.658.282c2.236.959,3.5,1.936,3.5,4.133,0,2.369-1.861,3.667-4.36,3.667a5.055,5.055,0,0,1-4.795-2.691Zm-9.295.228c.413.733.789,1.353,1.693,1.353.864,0,1.41-.338,1.41-1.653V14.856h2.631v8.982c0,2.724-1.6,3.964-3.929,3.964a4.085,4.085,0,0,1-3.947-2.4Z" />
-                                            </svg>
+                                        <div class="say-name">
+                                            <h2 data-aos="fade-right" data-aos-delay="600">Masud Rana <span id="typing"
+                                            class="text-danger"></span></h2>
                                         </div>
-
-                                        <p>Javascript
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- wordpress -->
-                        <div class="col-lg-3 col-md-6 mb-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center align-items-center flex-column">
-                                        <div class="programing-laguage">
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
-                                                height="100" viewBox="0 0 48 48">
-                                                <path fill="#fff"
-                                                    d="M24 4.050000000000001A19.95 19.95 0 1 0 24 43.95A19.95 19.95 0 1 0 24 4.050000000000001Z">
-                                                </path>
-                                                <path fill="#01579b"
-                                                    d="M8.001,24c0,6.336,3.68,11.806,9.018,14.4L9.385,17.488C8.498,19.479,8.001,21.676,8.001,24z M34.804,23.194c0-1.977-1.063-3.35-1.67-4.412c-0.813-1.329-1.576-2.437-1.576-3.752c0-1.465,1.471-2.84,3.041-2.84 c0.071,0,0.135,0.006,0.206,0.008C31.961,9.584,28.168,8,24.001,8c-5.389,0-10.153,2.666-13.052,6.749 c0.228,0.074,0.307,0.039,0.611,0.039c1.669,0,4.264-0.2,4.264-0.2c0.86-0.057,0.965,1.212,0.099,1.316c0,0-0.864,0.105-1.828,0.152 l5.931,17.778l3.5-10.501l-2.603-7.248c-0.861-0.046-1.679-0.152-1.679-0.152c-0.862-0.056-0.762-1.375,0.098-1.316 c0,0,2.648,0.2,4.217,0.2c1.675,0,4.264-0.2,4.264-0.2c0.861-0.057,0.965,1.212,0.104,1.316c0,0-0.87,0.105-1.832,0.152l5.891,17.61 l1.599-5.326C34.399,26.289,34.804,24.569,34.804,23.194z M24.281,25.396l-4.8,13.952c1.436,0.426,2.95,0.652,4.52,0.652 c1.861,0,3.649-0.324,5.316-0.907c-0.04-0.071-0.085-0.143-0.118-0.22L24.281,25.396z M38.043,16.318 c0.071,0.51,0.108,1.059,0.108,1.645c0,1.628-0.306,3.451-1.219,5.737l-4.885,14.135C36.805,35.063,40,29.902,40,24 C40,21.219,39.289,18.604,38.043,16.318z">
-                                                </path>
-                                                <path fill="#01579b"
-                                                    d="M4,24c0,11.024,8.97,20,19.999,20C35.03,44,44,35.024,44,24S35.03,4,24,4S4,12.976,4,24z M5.995,24 c0-9.924,8.074-17.999,18.004-17.999S42.005,14.076,42.005,24S33.929,42.001,24,42.001C14.072,42.001,5.995,33.924,5.995,24z">
-                                                </path>
-                                            </svg>
+                                        <div class="say-work">
+                                            <h2 data-aos="fade-left" data-aos-delay="700">I build things for the web.</h2>
                                         </div>
-
-                                        <p>WordPress
-
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- MySQL -->
-                        <div class="col-lg-3 col-md-6 mb-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center align-items-center flex-column">
-                                        <div class="programing-laguage">
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
-                                                height="100" viewBox="0 0 48 48">
-                                                <path fill="#00796b"
-                                                    d="M0.002,35.041h1.92v-7.085l2.667,6.057c0.329,0.755,0.779,1.022,1.662,1.022 s1.315-0.267,1.644-1.022l2.667-5.902v6.93h1.92v-7.258c0-0.697-0.277-1.035-0.849-1.209c-1.367-0.43-2.285-0.059-2.7,0.872 l-2.735,6.16l-2.649-6.16c-0.398-0.93-1.332-1.302-2.7-0.872C0.277,26.748,0,27.085,0,27.782v7.258H0.002z">
-                                                </path>
-                                                <path fill="#00796b"
-                                                    d="M13.441,29.281h1.92v4.055c-0.015,0.2,0.064,0.731,0.99,0.745c0.472,0.008,2.821,0,2.85,0v-4.8h1.92 c0.008,0,0,5.968,0,5.993c0.01,1.472-1.828,1.662-2.673,1.687h-5.006v-0.96c0.01,0,4.787,0.001,4.801,0 c1.088-0.115,0.959-0.714,0.959-0.896v-0.064H16.19c-1.67-0.015-2.735-0.751-2.747-1.59C13.441,33.373,13.479,29.317,13.441,29.281 z">
-                                                </path>
-                                                <path fill="#f57f17"
-                                                    d="M22.081,35.041h4.807c0.63,0,1.242-0.132,1.728-0.36c0.81-0.372,1.144-0.875,1.144-1.536v-1.368 c0-1.476-1.83-1.536-2.88-1.536h-1.92c-0.755,0-0.87-0.456-0.96-0.96v-0.96c0.09-0.384,0.258-0.9,0.923-0.96 c0.773,0,4.836,0,4.836,0v-0.96h-4.566c-0.755,0-3.114,0.09-3.114,1.92v1.187c0,0.84,0.738,1.524,2.34,1.692 c0.18,0.012,0.36,0.024,0.539,0.024c0,0,1.866-0.036,1.92-0.024c1.08,0,0.96,0.84,0.96,0.96v0.96c0,0.132-0.03,0.96-0.971,0.96 c-0.072,0-4.789,0-4.789,0V35.041z">
-                                                </path>
-                                                <path fill="#f57f17"
-                                                    d="M40.32,33.08c0,1.159,0.655,1.809,2.392,1.939c0.162,0.011,0.325,0.021,0.488,0.021H48v-0.96h-4.435 c-0.991,0-1.325-0.416-1.325-1.011v-6.669h-1.92V33.08z">
-                                                </path>
-                                                <path fill="#f57f17"
-                                                    d="M30.704,33.121v-4.8c0-1.02,0.5-1.724,1.916-1.92h0.672h3.447h0.525 c1.416,0.196,2.08,0.899,2.08,1.92v4.782c0,0.827-0.215,1.271-0.916,1.559L39.916,36h-2.16l-1.07-0.96h-1.257l-2.136,0.012 c-0.309,0-0.635-0.043-0.993-0.141C31.226,34.618,30.704,34.054,30.704,33.121z M32.624,33.121c0.098,0.467,0.473,0.96,1.14,0.96 h1.864l-1.068-0.96h2.175l0.519,0.482c0,0,0.186-0.152,0.186-0.482c0-0.33-0.016-4.8-0.016-4.8c-0.098-0.434-0.538-0.96-1.188-0.96 h-2.471c-0.749,0-1.14,0.548-1.14,1.058L32.624,33.121L32.624,33.121z">
-                                                </path>
-                                                <path fill="#00796b"
-                                                    d="M46.199,25.389c-1.031-0.028-1.818,0.068-2.491,0.351c-0.191,0.081-0.496,0.083-0.528,0.323 c0.105,0.11,0.121,0.275,0.205,0.41c0.16,0.26,0.432,0.609,0.674,0.791c0.265,0.2,0.538,0.414,0.821,0.587 c0.504,0.307,1.067,0.483,1.553,0.791c0.286,0.181,0.57,0.411,0.85,0.615c0.138,0.102,0.23,0.259,0.41,0.323 c0-0.01,0-0.019,0-0.029c-0.094-0.12-0.119-0.285-0.205-0.411c-0.127-0.127-0.254-0.254-0.381-0.381 c-0.372-0.494-0.846-0.929-1.348-1.289c-0.401-0.288-1.298-0.677-1.466-1.143c-0.01-0.01-0.019-0.019-0.03-0.03 c0.284-0.032,0.617-0.135,0.879-0.205c0.441-0.118,0.834-0.087,1.289-0.205c0.205-0.059,0.41-0.117,0.615-0.176 c0-0.039,0-0.078,0-0.117c-0.23-0.236-0.395-0.548-0.645-0.762c-0.657-0.559-1.373-1.117-2.11-1.583 c-0.409-0.258-0.915-0.426-1.348-0.645c-0.146-0.074-0.402-0.112-0.498-0.234c-0.228-0.29-0.351-0.659-0.527-0.996 c-0.368-0.708-0.73-1.482-1.055-2.227c-0.223-0.508-0.368-1.01-0.645-1.466c-1.331-2.188-2.764-3.509-4.982-4.807 c-0.472-0.276-1.041-0.385-1.642-0.528c-0.323-0.019-0.645-0.039-0.968-0.059c-0.197-0.083-0.401-0.323-0.587-0.44 c-0.735-0.465-2.621-1.475-3.165-0.147c-0.344,0.838,0.514,1.656,0.821,2.081c0.215,0.298,0.491,0.632,0.645,0.968 c0.101,0.22,0.119,0.441,0.205,0.674c0.213,0.574,0.55,1.228,0.826,1.759c0.139,0.269,0.293,0.551,0.469,0.791 c0.108,0.147,0.293,0.212,0.323,0.44c-0.181,0.253-0.191,0.646-0.293,0.968c-0.458,1.445-0.285,3.24,0.381,4.308 c0.204,0.328,0.686,1.032,1.348,0.762c0.579-0.236,0.45-0.967,0.615-1.612c0.037-0.146,0.014-0.253,0.088-0.351 c0,0.01,0,0.019,0,0.03c0.176,0.351,0.351,0.704,0.528,1.055c0.391,0.629,1.084,1.286,1.67,1.73 c0.304,0.23,0.544,0.628,0.938,0.762c0-0.01,0-0.019,0-0.03c-0.01,0-0.019,0-0.03,0c-0.076-0.119-0.196-0.168-0.293-0.264 c-0.229-0.225-0.485-0.504-0.674-0.762c-0.534-0.725-1.006-1.519-1.436-2.345c-0.205-0.395-0.384-0.829-0.557-1.231 c-0.067-0.155-0.066-0.389-0.205-0.469c-0.19,0.294-0.468,0.532-0.615,0.879c-0.234,0.555-0.265,1.233-0.351,1.934 c-0.052,0.018-0.029,0.006-0.059,0.029c-0.408-0.099-0.552-0.518-0.704-0.879c-0.384-0.912-0.455-2.38-0.117-3.429 c0.087-0.272,0.482-1.127,0.323-1.378c-0.076-0.251-0.328-0.396-0.468-0.587c-0.175-0.236-0.348-0.548-0.469-0.821 c-0.314-0.711-0.612-1.538-0.943-2.257c-0.158-0.344-0.425-0.691-0.645-0.996c-0.243-0.338-0.516-0.587-0.704-0.996 c-0.067-0.145-0.158-0.378-0.059-0.528c0.032-0.101,0.076-0.143,0.176-0.176c0.17-0.132,0.643,0.043,0.821,0.117 c0.47,0.195,0.862,0.381,1.26,0.645c0.191,0.127,0.384,0.372,0.615,0.44c0.088,0,0.176,0,0.264,0 c0.413,0.095,0.875,0.03,1.26,0.147c0.682,0.207,1.292,0.529,1.846,0.879c1.69,1.067,3.071,2.585,4.016,4.397 c0.152,0.292,0.218,0.57,0.351,0.879c0.27,0.624,0.611,1.266,0.879,1.876c0.268,0.609,0.53,1.223,0.909,1.73 c0.2,0.266,0.97,0.409,1.319,0.557c0.245,0.104,0.647,0.211,0.879,0.351c0.444,0.268,0.874,0.587,1.289,0.879 C45.528,24.803,46.167,25.124,46.199,25.389z">
-                                                </path>
-                                                <path fill="#00796b"
-                                                    d="M33.098,14.223c-0.215-0.004-0.367,0.023-0.528,0.059c0,0.01,0,0.019,0,0.03c0.01,0,0.019,0,0.03,0 c0.103,0.21,0.283,0.347,0.41,0.528c0.098,0.205,0.195,0.41,0.293,0.615c0.01-0.01,0.019-0.019,0.029-0.029 c0.181-0.128,0.265-0.332,0.264-0.645c-0.073-0.077-0.084-0.173-0.147-0.264C33.365,14.394,33.203,14.325,33.098,14.223z">
-                                                </path>
-                                            </svg>
+                                        <div class="say-text">
+                                            <p data-aos="fade-up" data-aos-delay="800">Hello ! My name is Masud Rana Laravel
+                                                developer and I enjoy creating things that
+                                                live
+                                                on the internet.
+                                                <br>My interest in web development started in 2022.
+                                            </p>
                                         </div>
-                                        <p>MySQL
+                                        <a href="https://wa.me/01306084771" class="btn hire-btn" target="_blank" data-aos="fade-up"
+                                        data-aos-delay="1000">Hire Me</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- HTML -->
-                        <div class="col-lg-3 col-md-6 mb-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center align-items-center flex-column">
-                                        <div class="programing-laguage">
-
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
-                                                height="100" viewBox="0 0 48 48">
-                                                <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
-                                                <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
-                                                <path fill="#FFF"
-                                                    d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z">
-                                                </path>
-                                                <path fill="#EEE"
-                                                    d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
-                                                </path>
-                                            </svg>
+                    </section>
+                    <!-- /.home section -->
+                    <!-- About section -->
+                    <section id="about-section">
+                        <div class="container">
+                            <div class="title">
+                                <h1 data-aos="fade-up" data-aos-delay="500">About Me</h1>
+                            </div>
+                            <div class="d-flex mt-lg-5 justify-content-between align-items-center" id="about-text-image">
+                                <div class="col-lg-6" id="about-me" data-aos="fade-right" data-aos-delay="600">
+                                    <p>
+                                        Hello ! My name is Masud Rana.
+                                        <br>
+                                        I have more than <strong class="text-primary">2 years</strong> of experience in creating and managing
+                                        scalable <strong class="text-primary">web applications</strong>. I am an enthusiastic <strong class="text-primary">PHP and Laravel</strong>
+                                        developer. I have created and maintained themes approved by
+                                        <strong class="text-primary">CodeCanyon</strong> and provided dedicated customer service. I have
+                                        also worked on <strong class="text-primary">Multi-tenant SaaS projects</strong>. Additionally, I have
+                                        hands-on experience building and integrating <strong class="text-primary">RESTful APIs</strong> for
+                                        modern applications. With practical experience in <strong class="text-primary">AWS (S3)</strong>, I
+                                        want to provide effective solutions and grow in a forward-thinking
+                                        company
+                                    </p>
+                                    <p>
+                                        I finished my CST (Computer Science & Technology) at Faridpur Polytechnic Institute. I am now studying CSE (Computer Science & Engineering) at Uttara University.
+                                    </p>
+                                    <p>
+                                        I know several Porgraming Languages with which I have done some projects.
+                                        These are mentioned below, you can scroll through the project section.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="600" id="profile-image-div">
+                                    <div class="float-end">
+                                        <div class="profile-image"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /.About section-->
+                    <!-- skill section -->
+                    <section id="skill-section">
+                        <div class="container">
+                            <div class="title">
+                                <h1 data-aos="fade-up" data-aos-delay="300">Skill</h1>
+                            </div>
+                            <div class="skill">
+                                <div class="row card-column" data-aos="fade-up" data-aos-delay="500">
+                                    <!-- Laravel -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="content">
+                                                    <div class="programing-laguage">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                                                            height="100" viewBox="0 0 48 48">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M47.982 23.453c.012.044.018.089.018.134v7.071a.516.516 0 0 1-.26.448l-5.934 3.417v6.772a.517.517 0 0 1-.258.447L29.16 48.874c-.029.016-.06.026-.09.037-.012.004-.023.011-.035.015a.519.519 0 0 1-.264 0c-.015-.004-.027-.012-.041-.017-.028-.01-.058-.02-.085-.035l-12.386-7.132a.517.517 0 0 1-.259-.447V20.082c0-.046.006-.091.018-.135.004-.015.013-.028.018-.043.01-.027.019-.055.033-.08.01-.017.024-.03.035-.046.015-.02.029-.042.046-.06.015-.015.034-.026.051-.039.019-.015.035-.032.057-.044l6.194-3.566a.517.517 0 0 1 .515 0l6.194 3.566c.021.013.039.029.057.044.017.013.036.024.05.038.019.02.032.04.047.061.011.016.026.029.035.046.015.025.023.053.034.08.005.015.014.028.017.044a.52.52 0 0 1 .019.134v13.25l5.16-2.972v-6.773a.52.52 0 0 1 .019-.134c.004-.016.012-.03.018-.044.01-.027.019-.055.033-.08.01-.017.024-.03.035-.046.015-.02.028-.042.046-.06.015-.015.034-.025.05-.038.02-.016.037-.033.057-.045l6.195-3.566a.516.516 0 0 1 .515 0l6.194 3.566c.022.013.038.03.058.044.016.013.034.024.05.039.017.018.03.04.046.06.011.016.025.03.034.046.015.025.024.053.034.08.006.015.014.028.018.044zm-1.014 6.907v-5.88L44.8 25.728l-2.994 1.724v5.88l5.162-2.972zm-6.194 10.637v-5.884l-2.945 1.682-8.41 4.8v5.94l11.355-6.538zM17.032 20.975v20.022l11.355 6.537v-5.938l-5.932-3.357-.002-.002-.003-.001c-.02-.012-.036-.028-.055-.043-.016-.012-.035-.023-.049-.037l-.001-.002c-.017-.016-.029-.036-.043-.054-.013-.017-.028-.032-.038-.05l-.001-.002c-.012-.02-.019-.043-.027-.065-.009-.019-.02-.037-.025-.058-.006-.025-.007-.05-.01-.076-.003-.02-.008-.038-.008-.058V23.946L19.2 22.222l-2.168-1.247zm5.678-3.863-5.16 2.97 5.159 2.97 5.16-2.97-5.16-2.97h.001zm2.684 18.537 2.993-1.723V20.975l-2.167 1.247-2.994 1.724v12.951l2.168-1.248zM41.29 20.617l-5.16 2.97 5.16 2.97 5.158-2.97-5.158-2.97zm-.517 6.835-2.994-1.724-2.167-1.248v5.88l2.993 1.723 2.168 1.249v-5.88zm-11.872 13.25 7.568-4.32 3.783-2.16-5.156-2.968-5.936 3.418-5.41 3.115 5.151 2.915z"
+                                                                fill="#FF2D20" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="title">
+                                                            Laravel
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <p>HTML 5
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CSS -->
-                        <div class="col-lg-3 col-md-6 mb-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center align-items-center flex-column">
-                                        <div class="programing-laguage">
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
-                                                height="100" viewBox="0 0 100 100">
-                                                <path
-                                                    d="M51.958,98c-0.58,0-1.16-0.078-1.724-0.232l-27.742-7.702c-2.593-0.72-4.495-3.004-4.735-5.685	l-6.179-69.304c-0.16-1.813,0.451-3.621,1.677-4.962C14.485,8.77,16.233,8,18.053,8h67.895c1.821,0,3.569,0.771,4.798,2.115	c1.225,1.339,1.837,3.147,1.677,4.959L86.236,84.37c-0.24,2.683-2.145,4.967-4.739,5.686l-27.803,7.709	C53.124,97.921,52.542,98,51.958,98z"
-                                                    opacity=".35"></path>
-                                                <path fill="#f2f2f2"
-                                                    d="M49.958,96c-0.58,0-1.16-0.078-1.724-0.232l-27.742-7.702c-2.593-0.72-4.495-3.004-4.735-5.685	L9.578,13.077c-0.16-1.813,0.451-3.621,1.677-4.962C12.485,6.77,14.233,6,16.053,6h67.895c1.821,0,3.569,0.771,4.798,2.115	c1.225,1.339,1.837,3.147,1.677,4.959L84.236,82.37c-0.24,2.683-2.145,4.967-4.739,5.686l-27.803,7.709	C51.124,95.921,50.542,96,49.958,96z">
-                                                </path>
-                                                <polygon fill="#2b59a1"
-                                                    points="83.947,12.5 77.762,81.792 49.958,89.5 22.231,81.803 16.053,12.5">
-                                                </polygon>
-                                                <path fill="#40396e"
-                                                    d="M49.958,91c-0.135,0-0.27-0.019-0.401-0.055L21.83,83.249c-0.602-0.167-1.037-0.689-1.093-1.312	l-6.179-69.303c-0.037-0.419,0.104-0.835,0.388-1.146C15.23,11.177,15.632,11,16.053,11h67.895c0.421,0,0.822,0.177,1.106,0.488	c0.284,0.311,0.425,0.726,0.388,1.146l-6.186,69.292c-0.056,0.622-0.491,1.145-1.094,1.312l-27.804,7.709	C50.228,90.982,50.093,91,49.958,91z M23.634,80.635l26.324,7.309l26.402-7.32L82.308,14H17.692L23.634,80.635z">
-                                                </path>
-                                                <polygon fill="#2785bd"
-                                                    points="72.467,77.38 77.771,17.957 50,17.957 50,83.608">
-                                                </polygon>
-                                                <polygon fill="#d9eeff"
-                                                    points="50,43.957 51,47.957 50,51.957 30.94,51.957 30.23,43.957">
-                                                </polygon>
-                                                <polygon fill="#d9eeff"
-                                                    points="50,26.957 51,30.957 50,34.957 29.441,34.957 28.72,26.957">
-                                                </polygon>
-                                                <polygon fill="#d9eeff"
-                                                    points="51,69.957 50,74.796 32.55,69.967 31.39,56.957 39.92,56.957 40.5,63.397 50,65.957">
-                                                </polygon>
-                                                <path fill="#f2f2f2"
-                                                    d="M50,26.957v8h11.969l-0.807,9H50c-0.009-0.002-0.008,8-0.008,8h10.485l-1.027,11.44L50,65.957v8.84	l17.4-4.83l0.12-1.44l2-22.37l0.21-2.29l1.5-16.91H50z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <p>CSS 3
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Bootstrap -->
-                        <div class="col-lg-3 col-md-6 mb-2">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center align-items-center flex-column">
-                                        <div class="programing-laguage">
+                                        <!-- PHP -->
+                                        <div class="col-lg-3 col-md-6 mb-2">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="content">
+                                                        <div class="programing-laguage">
+                                                            <svg x="0px" y="0px" width="100" height="100" viewBox="0 -60.5 256 256"
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                preserveAspectRatio="xMidYMid" viewBox="0 0 48 48">
+                                                                <defs>
+                                                                <radialGradient id="radialGradient-1" cx="0.8366" cy="-125.811"
+                                                                r="363.0565"
+                                                                gradientTransform="matrix(0.463 0 0 0.463 76.4644 81.9182)"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop offset="0" style="stop-color:#FFFFFF" />
+                                                                <stop offset="0.5" style="stop-color:#4C6B97" />
+                                                                <stop offset="1" style="stop-color:#231F20" />
+                                                                </radialGradient>
+                                                                </defs>
+                                                                <g>
+                                                                    <ellipse fill="url(#radialGradient-1)" cx="128" cy="67.3" rx="128"
+                                                                    ry="67.3" />
+                                                                    <ellipse fill="#6181B6" cx="128" cy="67.3" rx="123" ry="62.3" />
+                                                                    <g>
+                                                                        <path fill="#FFFFFF"
+                                                                            d="M152.9,87.5c0,0,6.1-31.4,6.1-31.4c1.4-7.1,0.2-12.4-3.4-15.7c-3.5-3.2-9.5-4.8-18.3-4.8h-10.6l3-15.6
+                                                                            c0.1-0.6,0-1.2-0.4-1.7c-0.4-0.5-0.9-0.7-1.5-0.7h-14.6c-1,0-1.8,0.7-2,1.6l-6.5,33.3c-0.6-3.8-2-7-4.4-9.6
+                                                                            c-4.3-4.9-11-7.4-20.1-7.4H52.1c-1,0-1.8,0.7-2,1.6L37,104.7c-0.1,0.6,0,1.2,0.4,1.7c0.4,0.5,0.9,0.7,1.5,0.7h14.7
+                                                                            c1,0,1.8-0.7,2-1.6l3.2-16.3h10.9c5.7,0,10.6-0.6,14.3-1.8c3.9-1.3,7.4-3.4,10.5-6.3c2.5-2.3,4.6-4.9,6.2-7.7l-2.6,13.5
+                                                                            c-0.1,0.6,0,1.2,0.4,1.7s0.9,0.7,1.5,0.7h14.6c1,0,1.8-0.7,2-1.6l7.2-37h10c4.3,0,5.5,0.8,5.9,1.2c0.3,0.3,0.9,1.5,0.2,5.2
+                                                                            l-5.8,29.9c-0.1,0.6,0,1.2,0.4,1.7c0.4,0.5,0.9,0.7,1.5,0.7H151C151.9,89.1,152.7,88.4,152.9,87.5z M85.3,61.5
+                                                                            c-0.9,4.7-2.6,8.1-5.1,10c-2.5,1.9-6.6,2.9-12,2.9h-6.5l4.7-24.2h8.4c6.2,0,8.7,1.3,9.7,2.4C85.8,54.2,86.1,57.3,85.3,61.5z" />
+                                                                            <path fill="#FFFFFF"
+                                                                                d="M215.3,42.9c-4.3-4.9-11-7.4-20.1-7.4h-28.3c-1,0-1.8,0.7-2,1.6l-13.1,67.5c-0.1,0.6,0,1.2,0.4,1.7
+                                                                                c0.4,0.5,0.9,0.7,1.5,0.7h14.7c1,0,1.8-0.7,2-1.6l3.2-16.3h10.9c5.7,0,10.6-0.6,14.3-1.8c3.9-1.3,7.4-3.4,10.5-6.3
+                                                                                c2.6-2.4,4.8-5.1,6.4-8c1.6-2.9,2.8-6.1,3.5-9.6C220.9,54.7,219.6,47.9,215.3,42.9z M200,61.5c-0.9,4.7-2.6,8.1-5.1,10
+                                                                                c-2.5,1.9-6.6,2.9-12,2.9h-6.5l4.7-24.2h8.4c6.2,0,8.7,1.3,9.7,2.4C200.6,54.2,200.9,57.3,200,61.5z" />
+                                                                            </g>
+                                                                            <g>
+                                                                                <path fill="#000004"
+                                                                                    d="M74.8,48.2c5.6,0,9.3,1,11.2,3.1c1.9,2.1,2.3,5.6,1.3,10.6c-1,5.2-3,9-5.9,11.2c-2.9,2.2-7.3,3.3-13.2,3.3
+                                                                                    h-8.9l5.5-28.2H74.8z M39,105h14.7l3.5-17.9h12.6c5.6,0,10.1-0.6,13.7-1.8c3.6-1.2,6.8-3.1,9.8-5.9c2.5-2.3,4.5-4.8,6-7.5
+                                                                                    c1.5-2.7,2.6-5.7,3.2-9c1.6-8,0.4-14.2-3.5-18.7c-3.9-4.5-10.1-6.7-18.6-6.7H52.1L39,105z" />
+                                                                                    <path fill="#000004"
+                                                                                        d="M113.3,19.6h14.6l-3.5,17.9h13c8.2,0,13.8,1.4,16.9,4.3c3.1,2.9,4,7.5,2.8,13.9L151,87.1h-14.8l5.8-29.9
+                                                                                        c0.7-3.4,0.4-5.7-0.7-6.9c-1.1-1.2-3.6-1.9-7.3-1.9h-11.7l-7.5,38.7h-14.6L113.3,19.6z" />
+                                                                                        <path fill="#000004"
+                                                                                            d="M189.5,48.2c5.6,0,9.3,1,11.2,3.1c1.9,2.1,2.3,5.6,1.3,10.6c-1,5.2-3,9-5.9,11.2c-2.9,2.2-7.3,3.3-13.2,3.3
+                                                                                            h-8.9l5.5-28.2H189.5z M153.7,105h14.7l3.5-17.9h12.6c5.6,0,10.1-0.6,13.7-1.8c3.6-1.2,6.8-3.1,9.8-5.9c2.5-2.3,4.5-4.8,6-7.5
+                                                                                            c1.5-2.7,2.6-5.7,3.2-9c1.6-8,0.4-14.2-3.5-18.7c-3.9-4.5-10.1-6.7-18.6-6.7h-28.3L153.7,105z" />
+                                                                                        </g>
+                                                                                    </g>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <p class="title">PHP
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Javascript -->
+                                                            <div class="col-lg-3 col-md-6 mb-2">
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <div class="content">
+                                                                            <div class="programing-laguage">
+                                                                                <svg x="0px" y="0px" width="100px" height="100px" viewBox="0 0 32 32"
+                                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                                    <rect x="2" y="2" width="28" height="28" style="fill:#f5de19" />
+                                                                                    <path
+                                                                                        d="M20.809,23.875a2.866,2.866,0,0,0,2.6,1.6c1.09,0,1.787-.545,1.787-1.3,0-.9-.716-1.222-1.916-1.747l-.658-.282c-1.9-.809-3.16-1.822-3.16-3.964,0-1.973,1.5-3.476,3.853-3.476a3.889,3.889,0,0,1,3.742,2.107L25,18.128A1.789,1.789,0,0,0,23.311,17a1.145,1.145,0,0,0-1.259,1.128c0,.789.489,1.109,1.618,1.6l.658.282c2.236.959,3.5,1.936,3.5,4.133,0,2.369-1.861,3.667-4.36,3.667a5.055,5.055,0,0,1-4.795-2.691Zm-9.295.228c.413.733.789,1.353,1.693,1.353.864,0,1.41-.338,1.41-1.653V14.856h2.631v8.982c0,2.724-1.6,3.964-3.929,3.964a4.085,4.085,0,0,1-3.947-2.4Z" />
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <p class="title">JavaScript
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- API Development -->
+                                                                <div class="col-lg-3 col-md-6 mb-2">
+                                                                    <div class="card">
+                                                                        <div class="card-body">
+                                                                            <div class="content">
+                                                                                <div class="programing-laguage">
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 48 48" fill="#01579b">
+                                                                                        <path d="M16 3h4v10h8V3h4v10h3a2 2 0 012 2v6a10 10 0 01-20 0v-6a2 2 0 012-2h3V3zM24 33a8 8 0 008-8H16a8 8 0 008 8z"/>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <p class="title">API Development
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- MySQL -->
+                                                                <div class="col-lg-3 col-md-6 mb-2">
+                                                                    <div class="card">
+                                                                        <div class="card-body">
+                                                                            <div class="content">
+                                                                                <div class="programing-laguage">
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                                                                                        height="100" viewBox="0 0 48 48">
+                                                                                        <path fill="#00796b"
+                                                                                            d="M0.002,35.041h1.92v-7.085l2.667,6.057c0.329,0.755,0.779,1.022,1.662,1.022 s1.315-0.267,1.644-1.022l2.667-5.902v6.93h1.92v-7.258c0-0.697-0.277-1.035-0.849-1.209c-1.367-0.43-2.285-0.059-2.7,0.872 l-2.735,6.16l-2.649-6.16c-0.398-0.93-1.332-1.302-2.7-0.872C0.277,26.748,0,27.085,0,27.782v7.258H0.002z">
+                                                                                        </path>
+                                                                                        <path fill="#00796b"
+                                                                                            d="M13.441,29.281h1.92v4.055c-0.015,0.2,0.064,0.731,0.99,0.745c0.472,0.008,2.821,0,2.85,0v-4.8h1.92 c0.008,0,0,5.968,0,5.993c0.01,1.472-1.828,1.662-2.673,1.687h-5.006v-0.96c0.01,0,4.787,0.001,4.801,0 c1.088-0.115,0.959-0.714,0.959-0.896v-0.064H16.19c-1.67-0.015-2.735-0.751-2.747-1.59C13.441,33.373,13.479,29.317,13.441,29.281 z">
+                                                                                        </path>
+                                                                                        <path fill="#f57f17"
+                                                                                            d="M22.081,35.041h4.807c0.63,0,1.242-0.132,1.728-0.36c0.81-0.372,1.144-0.875,1.144-1.536v-1.368 c0-1.476-1.83-1.536-2.88-1.536h-1.92c-0.755,0-0.87-0.456-0.96-0.96v-0.96c0.09-0.384,0.258-0.9,0.923-0.96 c0.773,0,4.836,0,4.836,0v-0.96h-4.566c-0.755,0-3.114,0.09-3.114,1.92v1.187c0,0.84,0.738,1.524,2.34,1.692 c0.18,0.012,0.36,0.024,0.539,0.024c0,0,1.866-0.036,1.92-0.024c1.08,0,0.96,0.84,0.96,0.96v0.96c0,0.132-0.03,0.96-0.971,0.96 c-0.072,0-4.789,0-4.789,0V35.041z">
+                                                                                        </path>
+                                                                                        <path fill="#f57f17"
+                                                                                            d="M40.32,33.08c0,1.159,0.655,1.809,2.392,1.939c0.162,0.011,0.325,0.021,0.488,0.021H48v-0.96h-4.435 c-0.991,0-1.325-0.416-1.325-1.011v-6.669h-1.92V33.08z">
+                                                                                        </path>
+                                                                                        <path fill="#f57f17"
+                                                                                            d="M30.704,33.121v-4.8c0-1.02,0.5-1.724,1.916-1.92h0.672h3.447h0.525 c1.416,0.196,2.08,0.899,2.08,1.92v4.782c0,0.827-0.215,1.271-0.916,1.559L39.916,36h-2.16l-1.07-0.96h-1.257l-2.136,0.012 c-0.309,0-0.635-0.043-0.993-0.141C31.226,34.618,30.704,34.054,30.704,33.121z M32.624,33.121c0.098,0.467,0.473,0.96,1.14,0.96 h1.864l-1.068-0.96h2.175l0.519,0.482c0,0,0.186-0.152,0.186-0.482c0-0.33-0.016-4.8-0.016-4.8c-0.098-0.434-0.538-0.96-1.188-0.96 h-2.471c-0.749,0-1.14,0.548-1.14,1.058L32.624,33.121L32.624,33.121z">
+                                                                                        </path>
+                                                                                        <path fill="#00796b"
+                                                                                            d="M46.199,25.389c-1.031-0.028-1.818,0.068-2.491,0.351c-0.191,0.081-0.496,0.083-0.528,0.323 c0.105,0.11,0.121,0.275,0.205,0.41c0.16,0.26,0.432,0.609,0.674,0.791c0.265,0.2,0.538,0.414,0.821,0.587 c0.504,0.307,1.067,0.483,1.553,0.791c0.286,0.181,0.57,0.411,0.85,0.615c0.138,0.102,0.23,0.259,0.41,0.323 c0-0.01,0-0.019,0-0.029c-0.094-0.12-0.119-0.285-0.205-0.411c-0.127-0.127-0.254-0.254-0.381-0.381 c-0.372-0.494-0.846-0.929-1.348-1.289c-0.401-0.288-1.298-0.677-1.466-1.143c-0.01-0.01-0.019-0.019-0.03-0.03 c0.284-0.032,0.617-0.135,0.879-0.205c0.441-0.118,0.834-0.087,1.289-0.205c0.205-0.059,0.41-0.117,0.615-0.176 c0-0.039,0-0.078,0-0.117c-0.23-0.236-0.395-0.548-0.645-0.762c-0.657-0.559-1.373-1.117-2.11-1.583 c-0.409-0.258-0.915-0.426-1.348-0.645c-0.146-0.074-0.402-0.112-0.498-0.234c-0.228-0.29-0.351-0.659-0.527-0.996 c-0.368-0.708-0.73-1.482-1.055-2.227c-0.223-0.508-0.368-1.01-0.645-1.466c-1.331-2.188-2.764-3.509-4.982-4.807 c-0.472-0.276-1.041-0.385-1.642-0.528c-0.323-0.019-0.645-0.039-0.968-0.059c-0.197-0.083-0.401-0.323-0.587-0.44 c-0.735-0.465-2.621-1.475-3.165-0.147c-0.344,0.838,0.514,1.656,0.821,2.081c0.215,0.298,0.491,0.632,0.645,0.968 c0.101,0.22,0.119,0.441,0.205,0.674c0.213,0.574,0.55,1.228,0.826,1.759c0.139,0.269,0.293,0.551,0.469,0.791 c0.108,0.147,0.293,0.212,0.323,0.44c-0.181,0.253-0.191,0.646-0.293,0.968c-0.458,1.445-0.285,3.24,0.381,4.308 c0.204,0.328,0.686,1.032,1.348,0.762c0.579-0.236,0.45-0.967,0.615-1.612c0.037-0.146,0.014-0.253,0.088-0.351 c0,0.01,0,0.019,0,0.03c0.176,0.351,0.351,0.704,0.528,1.055c0.391,0.629,1.084,1.286,1.67,1.73 c0.304,0.23,0.544,0.628,0.938,0.762c0-0.01,0-0.019,0-0.03c-0.01,0-0.019,0-0.03,0c-0.076-0.119-0.196-0.168-0.293-0.264 c-0.229-0.225-0.485-0.504-0.674-0.762c-0.534-0.725-1.006-1.519-1.436-2.345c-0.205-0.395-0.384-0.829-0.557-1.231 c-0.067-0.155-0.066-0.389-0.205-0.469c-0.19,0.294-0.468,0.532-0.615,0.879c-0.234,0.555-0.265,1.233-0.351,1.934 c-0.052,0.018-0.029,0.006-0.059,0.029c-0.408-0.099-0.552-0.518-0.704-0.879c-0.384-0.912-0.455-2.38-0.117-3.429 c0.087-0.272,0.482-1.127,0.323-1.378c-0.076-0.251-0.328-0.396-0.468-0.587c-0.175-0.236-0.348-0.548-0.469-0.821 c-0.314-0.711-0.612-1.538-0.943-2.257c-0.158-0.344-0.425-0.691-0.645-0.996c-0.243-0.338-0.516-0.587-0.704-0.996 c-0.067-0.145-0.158-0.378-0.059-0.528c0.032-0.101,0.076-0.143,0.176-0.176c0.17-0.132,0.643,0.043,0.821,0.117 c0.47,0.195,0.862,0.381,1.26,0.645c0.191,0.127,0.384,0.372,0.615,0.44c0.088,0,0.176,0,0.264,0 c0.413,0.095,0.875,0.03,1.26,0.147c0.682,0.207,1.292,0.529,1.846,0.879c1.69,1.067,3.071,2.585,4.016,4.397 c0.152,0.292,0.218,0.57,0.351,0.879c0.27,0.624,0.611,1.266,0.879,1.876c0.268,0.609,0.53,1.223,0.909,1.73 c0.2,0.266,0.97,0.409,1.319,0.557c0.245,0.104,0.647,0.211,0.879,0.351c0.444,0.268,0.874,0.587,1.289,0.879 C45.528,24.803,46.167,25.124,46.199,25.389z">
+                                                                                        </path>
+                                                                                        <path fill="#00796b"
+                                                                                            d="M33.098,14.223c-0.215-0.004-0.367,0.023-0.528,0.059c0,0.01,0,0.019,0,0.03c0.01,0,0.019,0,0.03,0 c0.103,0.21,0.283,0.347,0.41,0.528c0.098,0.205,0.195,0.41,0.293,0.615c0.01-0.01,0.019-0.019,0.029-0.029 c0.181-0.128,0.265-0.332,0.264-0.645c-0.073-0.077-0.084-0.173-0.147-0.264C33.365,14.394,33.203,14.325,33.098,14.223z">
+                                                                                        </path>
+                                                                                    </svg>
+                                                                                </div>
+                                                                                <p class="title">MySQL</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- HTML -->
+                                                                <div class="col-lg-3 col-md-6 mb-2">
+                                                                    <div class="card">
+                                                                        <div class="card-body">
+                                                                            <div class="content">
+                                                                                <div class="programing-laguage">
+                                                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                                                                                        height="100" viewBox="0 0 48 48">
+                                                                                    <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                                                                                <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                                                                                <path fill="#FFF"
+                                                                                    d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z">
+                                                                                </path>
+                                                                                <path fill="#EEE"
+                                                                                    d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
+                                                                                </path>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <p class="title">HTML 5</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- CSS -->
+                                                        <div class="col-lg-3 col-md-6 mb-2">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="content">
+                                                                        <div class="programing-laguage">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                                                                                height="100" viewBox="0 0 100 100">
+                                                                                <path
+                                                                                    d="M51.958,98c-0.58,0-1.16-0.078-1.724-0.232l-27.742-7.702c-2.593-0.72-4.495-3.004-4.735-5.685  l-6.179-69.304c-0.16-1.813,0.451-3.621,1.677-4.962C14.485,8.77,16.233,8,18.053,8h67.895c1.821,0,3.569,0.771,4.798,2.115 c1.225,1.339,1.837,3.147,1.677,4.959L86.236,84.37c-0.24,2.683-2.145,4.967-4.739,5.686l-27.803,7.709 C53.124,97.921,52.542,98,51.958,98z"
+                                                                                opacity=".35"></path>
+                                                                                <path fill="#f2f2f2"
+                                                                                    d="M49.958,96c-0.58,0-1.16-0.078-1.724-0.232l-27.742-7.702c-2.593-0.72-4.495-3.004-4.735-5.685  L9.578,13.077c-0.16-1.813,0.451-3.621,1.677-4.962C12.485,6.77,14.233,6,16.053,6h67.895c1.821,0,3.569,0.771,4.798,2.115  c1.225,1.339,1.837,3.147,1.677,4.959L84.236,82.37c-0.24,2.683-2.145,4.967-4.739,5.686l-27.803,7.709 C51.124,95.921,50.542,96,49.958,96z">
+                                                                                </path>
+                                                                                <polygon fill="#2b59a1"
+                                                                                    points="83.947,12.5 77.762,81.792 49.958,89.5 22.231,81.803 16.053,12.5">
+                                                                                </polygon>
+                                                                                <path fill="#40396e"
+                                                                                    d="M49.958,91c-0.135,0-0.27-0.019-0.401-0.055L21.83,83.249c-0.602-0.167-1.037-0.689-1.093-1.312 l-6.179-69.303c-0.037-0.419,0.104-0.835,0.388-1.146C15.23,11.177,15.632,11,16.053,11h67.895c0.421,0,0.822,0.177,1.106,0.488 c0.284,0.311,0.425,0.726,0.388,1.146l-6.186,69.292c-0.056,0.622-0.491,1.145-1.094,1.312l-27.804,7.709   C50.228,90.982,50.093,91,49.958,91z M23.634,80.635l26.324,7.309l26.402-7.32L82.308,14H17.692L23.634,80.635z">
+                                                                                </path>
+                                                                                <polygon fill="#2785bd"
+                                                                                    points="72.467,77.38 77.771,17.957 50,17.957 50,83.608">
+                                                                                </polygon>
+                                                                                <polygon fill="#d9eeff"
+                                                                                    points="50,43.957 51,47.957 50,51.957 30.94,51.957 30.23,43.957">
+                                                                                </polygon>
+                                                                                <polygon fill="#d9eeff"
+                                                                                    points="50,26.957 51,30.957 50,34.957 29.441,34.957 28.72,26.957">
+                                                                                </polygon>
+                                                                                <polygon fill="#d9eeff"
+                                                                                    points="51,69.957 50,74.796 32.55,69.967 31.39,56.957 39.92,56.957 40.5,63.397 50,65.957">
+                                                                                </polygon>
+                                                                                <path fill="#f2f2f2"
+                                                                                    d="M50,26.957v8h11.969l-0.807,9H50c-0.009-0.002-0.008,8-0.008,8h10.485l-1.027,11.44L50,65.957v8.84  l17.4-4.83l0.12-1.44l2-22.37l0.21-2.29l1.5-16.91H50z">
+                                                                                </path>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <p class="title">CSS 3
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Bootstrap -->
+                                                        <div class="col-lg-3 col-md-6 mb-2">
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="content">
+                                                                        <div class="programing-laguage">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
+                                                                                height="100" viewBox="0 0 64 64">
+                                                                                <linearGradient id="GdeByWRAcrxkNrB1xXKVla_ZMc42tPbG32H_gr1" x1="32"
+                                                                                    x2="32" y1="57" y2="7" gradientUnits="userSpaceOnUse">
+                                                                                    <stop offset="0" stop-color="#c822ff"></stop>
+                                                                                    <stop offset="1" stop-color="#1a6dff"></stop>
+                                                                                </linearGradient>
+                                                                                <path fill="none" stroke="url(#GdeByWRAcrxkNrB1xXKVla)"
+                                                                                    stroke-miterlimit="10" stroke-width="2"
+                                                                                    d="M62,30.45v3.1    c-2.77,0.31-4.93,2.4-5.95,5.67c-1.02,3.31-1.16,7.37-1.05,10.51c0.11,3.26-2.43,6.27-5.87,6.27H14.87c-3.44,0-5.98-3.01-5.87-6.27  c0.11-3.14-0.03-7.2-1.05-10.51C6.93,35.95,4.77,33.86,2,33.55v-3.1c2.77-0.31,4.93-2.4,5.95-5.67C8.97,21.47,9.11,17.41,9,14.27    C8.89,11.01,11.43,8,14.87,8h34.26c3.44,0,5.98,3.01,5.87,6.27c-0.11,3.14,0.03,7.2,1.05,10.51C57.07,28.05,59.23,30.14,62,30.45z">
+                                                                                </path>
+                                                                                <linearGradient id="GdeByWRAcrxkNrB1xXKVlb_ZMc42tPbG32H_gr2" x1="32"
+                                                                                    x2="32" y1="53" y2="11" gradientUnits="userSpaceOnUse">
+                                                                                    <stop offset="0" stop-color="#e6abff"></stop>
+                                                                                    <stop offset="1" stop-color="#6dc7ff"></stop>
+                                                                                </linearGradient>
+                                                                                <path fill="url(#GdeByWRAcrxkNrB1xXKVlb_ZMc42tPbG32H_gr2)"
+                                                                                    d="M14.87,53c-0.95,0-1.599-0.465-1.976-0.854c-0.599-0.619-0.925-1.462-0.896-2.314   c0.11-3.134-0.005-7.677-1.181-11.495C9.942,35.533,8.351,33.342,6.303,32c2.048-1.341,3.639-3.529,4.511-6.326 c1.18-3.829,1.295-8.372,1.185-11.51c-0.028-0.848,0.298-1.691,0.896-2.31C13.271,11.465,13.92,11,14.87,11h34.26   c0.95,0,1.599,0.465,1.976,0.854c0.599,0.619,0.925,1.462,0.896,2.314c-0.11,3.134,0.005,7.677,1.181,11.495    c0.875,2.804,2.467,4.995,4.515,6.337c-2.048,1.341-3.639,3.529-4.511,6.326c-1.18,3.829-1.295,8.372-1.185,11.51   c0.028,0.848-0.298,1.691-0.896,2.31C50.729,52.535,50.08,53,49.13,53H14.87z M36.713,31.135c2.657-0.428,4.744-2.891,4.744-5.65    c0-3.93-3.105-6.485-7.829-6.485H23l0,25.99h10.689c5.66,0,9.07-2.769,9.07-7.35c0-3.461-2.433-5.955-6.047-6.352V31.135z M32.631,22.298c2.993,0,4.693,1.334,4.693,3.746c0,2.576-1.975,4.011-5.558,4.011H27v-7.757H32.631z M27,41.692V33.14h5.6 c3.909,0,5.935,1.435,5.935,4.245c0,2.81-1.975,4.306-5.701,4.306H27z">
+                                                                                </path>
+                                                                            </svg>
+                                                                        </div>
+                                                                        <p class="title">Bootstrap
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!-- /.Skill section-->
+                                        <!-- project section -->
+                                        <section id="project-section" class="project-section">
+                                            <div class="container">
+                                                <div class="title">
+                                                    <h1 data-aos="fade-up" data-aos-delay="500">My Projects</h1>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <!--ecommet-->
+                                                    <div class="col-lg-4 col-sm-12 col-md-6 mb-3">
+                                                        <div class="card position-relative">
+                                                            <span class="badge bg-success position-absolute top-0 end-0 m-2 px-2 py-2 shadow-sm">
+                                                                <strong>Role</strong>: Backend Developer
+                                                            </span>
+                                                            
+                                                            <img src="img/project/ecommet.png" class="card-img-top" alt="Ecommet">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">
+                                                                Ecommet - Multitenant Ecommerce Website (White Label)
+                                                                </h5>
+                                                                <p class="card-text">
+                                                                    “Ecommet” is a Multitenant Ecommerce Website (SAAS) which provides 6 attractive themes (multipurpose, grocery, electronics, kids, furniture, fashion) for tenants
+                                                                </p>
+                                                                <a target="_blank" href="https://codecanyon.net/item/ecommet-multitenant-ecommerce-website-saas/57240303?s_rank=1" class="btn hire-btn">
+                                                                    Visit Site
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--bookapp-->
+                                                    <div class="col-lg-4 col-sm-12 col-md-6 mb-3">
+                                                        <div class="card position-relative">
+                                                            <span class="badge bg-success position-absolute top-0 end-0 m-2 px-2 py-2 shadow-sm">
+                                                                <strong>Role</strong>: Backend Developer
+                                                            </span>
+                                                            
+                                                            <img src="img/project/bookapp.png" class="card-img-top" alt="Bookapp">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">
+                                                                Bookapp - Multivendor Service / Appointment Booking Laravel Website (Subscription Based)
+                                                                </h5>
+                                                                <p class="card-text">
+                                                                    BookApp is a Multivendor Service / Appointment Booking Website where Admin can create subscription packages (monthly / yearly / lifetime / premium / free). Vendors will subscribe to these packages & list offline / online services in the platform. It supports
+                                                                </p>
+                                                                <a target="_blank" href="https://codecanyon.net/item/bookapp-multivendor-service-appointment-booking-laravel-website-subscription-based/54240416?s_rank=1" class="btn hire-btn">
+                                                                    Visit Site
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--Altoketicket-->
+                                                    <div class="col-lg-4 col-sm-12 col-md-6 mb-3">
+                                                        <div class="card position-relative">
+                                                            <span class="badge bg-success position-absolute top-0 end-0 m-2 px-2 py-2 shadow-sm">
+                                                                <strong>Role</strong>: Backend Developer
+                                                            </span>
+                                                            
+                                                            <img src="img/project/ticket.png" class="card-img-top" alt="Bookapp">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">
+                                                                Altoketicket - Event Booking / Multivendor Event Ticket Booking Website
+                                                                </h5>
+                                                                <p class="card-text">
+                                                                    Altoketicket is a vast Multivendor Event Ticket Booking System. It offers lot of features. Admin & Vendors / Organizers can upload Venue / Online events. Admin can receive
+                                                                </p>
+                                                                <a target="_blank" href="https://altoketicket.com.pe/" class="btn hire-btn">
+                                                                    Visit Site
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--cartnex -->
+                                                    <div class="col-lg-4 col-sm-12 col-md-6 mb-3">
+                                                        <div class="card position-relative">
+                                                            <span class="badge bg-success position-absolute top-0 end-0 m-2 px-2 py-2 shadow-sm">
+                                                                <strong>Role</strong>: Fullstack  Developer
+                                                            </span>
+                                                            
+                                                            <img src="img/project/ticket.png" class="card-img-top" alt="Bookapp">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">
+                                                                CartNex - Single Vendor Ecommerce Website with POS
+                                                                </h5>
+                                                                <p class="card-text">
+                                                                    CartNex is a complete Single Ecommerce website platform with support for
+                                                                    digital and physical products, POS system, and seamless payment
+                                                                    integrations including SSLCommerz. Designed for flexibility
+                                                                    and performance, it offers everything you need to run a modern online store.
+                                                                </p>
+                                                                <a target="_blank" href="https://www.cartnex.temdevs.com/" class="btn hire-btn">
+                                                                    Visit Site
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--temdevs -->
+                                                    <div class="col-lg-4 col-sm-12 col-md-6 mb-3">
+                                                        <div class="card position-relative">
+                                                            <span class="badge bg-success position-absolute top-0 end-0 m-2 px-2 py-2 shadow-sm">
+                                                                <strong>Role</strong>: Fullstack  Developer
+                                                            </span>
+                                                            
+                                                            <img src="img/project/agency.png" class="card-img-top" alt="Bookapp">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">
+                                                                TEM DEVS - Full-Service Digital Agency for Web & Software Solutions
+                                                                </h5>
+                                                                <p class="card-text">
+                                                                    TEM DEVS is a modern agency website offering professional web development,
+                                                                    digital solutions, and custom software services. Designed for performance
+                                                                    and flexibility, it showcases services, portfolios, and client projects
+                                                                    effectively.
+                                                                </p>
+                                                                <a target="_blank" href="https://temdevs.com" class="btn hire-btn">
+                                                                    Visit Site
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100"
-                                                height="100" viewBox="0 0 64 64">
-                                                <linearGradient id="GdeByWRAcrxkNrB1xXKVla_ZMc42tPbG32H_gr1" x1="32"
-                                                    x2="32" y1="57" y2="7" gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0" stop-color="#c822ff"></stop>
-                                                    <stop offset="1" stop-color="#1a6dff"></stop>
-                                                </linearGradient>
-                                                <path fill="none" stroke="url(#GdeByWRAcrxkNrB1xXKVla)"
-                                                    stroke-miterlimit="10" stroke-width="2"
-                                                    d="M62,30.45v3.1	c-2.77,0.31-4.93,2.4-5.95,5.67c-1.02,3.31-1.16,7.37-1.05,10.51c0.11,3.26-2.43,6.27-5.87,6.27H14.87c-3.44,0-5.98-3.01-5.87-6.27	c0.11-3.14-0.03-7.2-1.05-10.51C6.93,35.95,4.77,33.86,2,33.55v-3.1c2.77-0.31,4.93-2.4,5.95-5.67C8.97,21.47,9.11,17.41,9,14.27	C8.89,11.01,11.43,8,14.87,8h34.26c3.44,0,5.98,3.01,5.87,6.27c-0.11,3.14,0.03,7.2,1.05,10.51C57.07,28.05,59.23,30.14,62,30.45z">
-                                                </path>
-                                                <linearGradient id="GdeByWRAcrxkNrB1xXKVlb_ZMc42tPbG32H_gr2" x1="32"
-                                                    x2="32" y1="53" y2="11" gradientUnits="userSpaceOnUse">
-                                                    <stop offset="0" stop-color="#e6abff"></stop>
-                                                    <stop offset="1" stop-color="#6dc7ff"></stop>
-                                                </linearGradient>
-                                                <path fill="url(#GdeByWRAcrxkNrB1xXKVlb_ZMc42tPbG32H_gr2)"
-                                                    d="M14.87,53c-0.95,0-1.599-0.465-1.976-0.854c-0.599-0.619-0.925-1.462-0.896-2.314	c0.11-3.134-0.005-7.677-1.181-11.495C9.942,35.533,8.351,33.342,6.303,32c2.048-1.341,3.639-3.529,4.511-6.326	c1.18-3.829,1.295-8.372,1.185-11.51c-0.028-0.848,0.298-1.691,0.896-2.31C13.271,11.465,13.92,11,14.87,11h34.26	c0.95,0,1.599,0.465,1.976,0.854c0.599,0.619,0.925,1.462,0.896,2.314c-0.11,3.134,0.005,7.677,1.181,11.495	c0.875,2.804,2.467,4.995,4.515,6.337c-2.048,1.341-3.639,3.529-4.511,6.326c-1.18,3.829-1.295,8.372-1.185,11.51	c0.028,0.848-0.298,1.691-0.896,2.31C50.729,52.535,50.08,53,49.13,53H14.87z M36.713,31.135c2.657-0.428,4.744-2.891,4.744-5.65	c0-3.93-3.105-6.485-7.829-6.485H23l0,25.99h10.689c5.66,0,9.07-2.769,9.07-7.35c0-3.461-2.433-5.955-6.047-6.352V31.135z M32.631,22.298c2.993,0,4.693,1.334,4.693,3.746c0,2.576-1.975,4.011-5.558,4.011H27v-7.757H32.631z M27,41.692V33.14h5.6	c3.909,0,5.935,1.435,5.935,4.245c0,2.81-1.975,4.306-5.701,4.306H27z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <p>Bootstrap
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Payment Gateways Section -->
-                <div>
-                    <h4 data-aos="fade-up" data-aos-delay="300" class="mt-3 text-white">(20) Payment Gateways
-                        Integration</h4>
-                    <div class="payment-slider" data-aos="fade-up" data-aos-delay="500">
-                        <div class="slider-container">
-                            <!-- sslcommerz  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://sslcommerz.com/wp-content/uploads/2021/11/logo.png" alt="sslcommerz 
-                                            " class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Perfect Money -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQseX0978u0FR4yvzDxINbupg2GVkkU3KuDZQ&s"
-                                            alt="Perfect Money
-                                            " class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Paypal -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://silicondales.com/wp-content/uploads/2013/05/paypal-logo.jpg"
-                                            alt="Paypal" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Stripe -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRek2EqBo5YIE0TPMVMlIFA594WZZeuqYdAQQ&s"
-                                            alt="Stripe" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Paystack -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Paystack.png"
-                                            alt="Paystack" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Mollie  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://images.ctfassets.net/4pxjo1vaz7xk/Ua5C38kdWPbhHboqXgd2n/15b767616432cad0438d2501a387ea2e/mollie.jpeg"
-                                            alt="Mollie" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Yoco  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://www.yoco.com/za/blog/wp-content/uploads/2021/06/logo-transformation.gif"
-                                            alt="Yoco" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Mercadopago  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://raw.githubusercontent.com/FriendsOfBotble/fob-mercadopago/develop/screenshot.png"
-                                            alt="Mercadopago" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Razorpay  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-7IH0VPsfmHwYVxNapdCiwGNUK8rWk4JBuE9usOoZiHn_h7osooUNzmnGZJaCjvwn52LM9AoZi_DKpLQxzl270uLNS86RBNSktG907Fyt5WSob0C2iASq9r3sSUBv1zecOdaAeVNbcu_AYIO-b_4ZHtQmuDLMJmCYEX6-r5OzNtqT6f2fbttEZMiUMfs/s740/razorpay.png"
-                                            alt="Razorpay" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Flutterwave  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://media.licdn.com/dms/image/v2/C5612AQEUxHrE1bPa5w/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1569528038480?e=2147483647&v=beta&t=APd8FIIzIqkPWCsEAphSfzoQDIJAkI1zS8Id-_EIkEw"
-                                            alt="Flutterwave" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Xendit  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://www.xendit.co/wp-content/uploads/2020/03/XENDIT-LOGOArtboard-1@2x-1024x441.png"
-                                            alt="Xendit" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- MyFatoorah  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://apps.odoo.com/web/image/loempia.module/158269/icon_image?unique=ed0e982"
-                                            alt="MyFatoorah" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Midtrans  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://nurosoft.id/blog/wp-content/uploads/2024/06/Midtrans.webp"
-                                            alt="Midtrans" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Instamojo  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://www.pngitem.com/pimgs/m/217-2172193_instamojo-payment-gateway-hd-png-download.png"
-                                            alt="Instamojo" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Toyyibpay  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://image.opencart.com/cache/62ce7876eab3e-resize-710x380.jpg"
-                                            alt="Toyyibpay" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Authorize.Net  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://vikwp.com/images/plugins/authorize.png" alt="Authorize.Net"
-                                            class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Iyzico  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://www.jotform.com/blog/wp-content/uploads/2023/03/iyzico_colored.png"
-                                            alt="Iyzico" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Paytabs  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKxbDuPejjEITKz1LO6fBJj9EbjTeher6yKg&s"
-                                            alt="Paytabs" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Phonepe  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgm4pm5jK3vp0VK7ZLLcH3UNY8l11hMWr2Q&s"
-                                            alt="Phonepe" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Paytm  -->
-                            <div class="payment-card">
-                                <div class="card">
-                                    <div class="card-body text-center">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp2nUQCDvpxPI_8ak3xKwbITIVtTbIt-oEUA&s"
-                                            alt="Paytm" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- /.Skill section-->
-
-        <!-- project section -->
-        <section id="project-section" class="d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="title">
-                    <h1 data-aos="fade-up" data-aos-delay="500">My Projects</h1>
-                </div>
-                <div></div>
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                            type="button" role="tab" aria-controls="home" aria-selected="true">All</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                            type="button" role="tab" aria-controls="profile" aria-selected="false">Frontend</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                            type="button" role="tab" aria-controls="contact" aria-selected="false">Laravel
-                            Scripts</button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/ecommet.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank"
-                                                href="https://codecanyon.net/item/ecommet-multitenant-ecommerce-website-saas/57240303?s_rank=1">
-                                                Ecommet <br>Multitenant Ecommerce Website (White Label)
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role : </strong>Backend Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/bookapp.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank"
-                                                href="https://codecanyon.net/item/bookapp-multivendor-service-appointment-booking-laravel-website-subscription-based/54240416?s_rank=1">
-                                                Bookapp <br>Multivendor Booking Website
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role : </strong>Backend Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/ticket.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank" href="https://altoketicket.com.pe">
-                                                Event Booking <br>Multivendor Ticket Booking Website
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role:</strong> WhatsApp & SMS Service Integration</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/edu.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank" href="https://temdevs.com/edu/">
-                                                EduApp <br>Education Mangament SASS HTML
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role : </strong>Frontend Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/devcity.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank" href="https://masud.kreativdev.com/devcity/">
-                                                My Rentals <br>Multivendor Equipment/ Multipurpose Rental Website
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role : </strong>Backend Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/agency.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank" href="https://temdevs.com">
-                                                TEM DEVS <br>Agency Website HTML
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role : </strong>Frontend Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/edu.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank" href="https://temdevs.com/edu/">
-                                                EduApp <br>Education Mangament SASS HTML
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role : </strong>Frontend Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/agency.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank" href="https://temdevs.com">
-                                                TEM DEVS <br>Agency Website HTML
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role : </strong>Frontend Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/ecommet.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank"
-                                                href="https://codecanyon.net/item/ecommet-multitenant-ecommerce-website-saas/57240303?s_rank=1">
-                                                Ecommet <br>Multitenant Ecommerce Website (White Label)
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role : </strong>Backend Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/bookapp.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank"
-                                                href="https://codecanyon.net/item/bookapp-multivendor-service-appointment-booking-laravel-website-subscription-based/54240416?s_rank=1">
-                                                Bookapp <br>Multivendor Booking Website
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role : </strong>Backend Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/ticket.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank" href="https://altoketicket.com.pe">
-                                                Event Booking <br>Multivendor Ticket Booking Website
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role:</strong> WhatsApp & SMS Service Integration</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card project-card">
-                                    <img src="img/project/devcity.png" class="card-img-top" alt="Project Image">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            <a target="_blank" href="https://masud.kreativdev.com/devcity/">
-                                                My Rentals <br>Multivendor Equipment/ Multipurpose Rental Website
-                                            </a>
-                                        </h5>
-                                        <span><strong>Role : </strong>Backend Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <!-- /.project section -->
-
-        <!-- contact section -->
-        <section id="contact-section" class="d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="col-lg-5 col-sm-10">
-                        <div class="contact text-center">
-                            <h1 class='contact-title' data-aos="fade-right" data-aos-delay="300">Get In Touch</h1>
-                            <p class="contact-p" data-aos="fade-left" data-aos-delay="500">
-                                Although I'm not currently looking for any new opportunities, my inbox is always open.
-                                Whether
-                                you have a question or just want to say hi, I'll try my best to get back to you!
-                            </p>
-                            <a data-aos="fade-up" data-aos-delay="800" href="mailto:ranaahmed269205@gmail.com"
-                                class="btn mt-4 say-hello-btn" target="_blank">Say
-                                hello</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /.contact section -->
-
-        <!-- contact section -->
-        <footer>
-            <div class="d-flex gap-3 footer-icon">
-                <a target="_blank" href="https://www.facebook.com/masud5009" class="nav-link"><i
-                        class="fab fa-facebook"></i></a>
-                <a target="_blank" href="https://www.github.com/masud5009" class="nav-link"><i
-                        class="fab fa-github"></i></a>
-                <a target="_blank" href="https://www.twitter.com/masud9005" class="nav-link"><i
-                        class="fab fa-twitter"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/masud5009/" class="nav-link"><i
-                        class="fab fa-linkedin-in"></i></a>
-                <a target="_blank" href="https://wa.me/01306084771" class="nav-link">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-            <strong class="cpy-right">Copyright &copy; Masud Rana,<span class="m-1"> All rights
-                    reserved.</span></strong>
-
-        </footer>
-        <!-- /.contact section -->
-    </main>
-
-    <!-- /contact section -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-
-    <script src="js/app.js"></script>
-</body>
-
-</html>
+                                                    <!--eduapp -->
+                                                    <div class="col-lg-4 col-sm-12 col-md-6 mb-3">
+                                                        <div class="card position-relative">
+                                                            <span class="badge bg-success position-absolute top-0 end-0 m-2 px-2 py-2 shadow-sm">
+                                                                <strong>Role</strong>: Frontend  Developer
+                                                            </span>
+                                                            
+                                                            <img src="img/project/edu.png" class="card-img-top" alt="Bookapp">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">
+                                                                    EduApp - Education Management SASS Template
+                                                                </h5>
+                                                                <p class="card-text">
+                                                                    EduApp is a responsive HTML template built with SASS for education management 
+    websites. It features clean design, interactive layouts, and ready-to-use 
+    components for courses, student profiles, and dashboards.
+                                                                </p>
+                                                                <a target="_blank" href="https://temdevs.com/edu/" class="btn hire-btn">
+                                                                    Visit Site
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </section>
+                                        <!-- /.project section -->
+                                        <!-- contact section -->
+                                        <section id="contact-section">
+                                            <div class="container">
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <div class="col-lg-5 col-sm-10">
+                                                        <div class="contact text-center">
+                                                            <h1 class='contact-title' data-aos="fade-right" data-aos-delay="300">Get In Touch</h1>
+                                                            <p class="contact-p" data-aos="fade-left" data-aos-delay="500">
+                                                                Although I'm not currently looking for any new opportunities, my inbox is always open.
+                                                                Whether
+                                                                you have a question or just want to say hi, I'll try my best to get back to you!
+                                                            </p>
+                                                            <a data-aos="fade-up" data-aos-delay="800" href="mailto:ranaahmed269205@gmail.com"
+                                                                class="btn mt-4 say-hello-btn" target="_blank">Say
+                                                            hello</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!-- /.contact section -->
+                                        <!-- contact section -->
+                                        <footer>
+                                            <div class="d-flex gap-3 footer-icon">
+                                                <a target="_blank" href="https://www.facebook.com/masud5009" class="nav-link"><i
+                                                class="fab fa-facebook"></i></a>
+                                                <a target="_blank" href="https://www.github.com/masud5009" class="nav-link"><i
+                                                class="fab fa-github"></i></a>
+                                                <a target="_blank" href="https://www.twitter.com/masud9005" class="nav-link"><i
+                                                class="fab fa-twitter"></i></a>
+                                                <a target="_blank" href="https://www.linkedin.com/in/masud5009/" class="nav-link"><i
+                                                class="fab fa-linkedin-in"></i></a>
+                                                <a target="_blank" href="https://wa.me/01306084771" class="nav-link">
+                                                    <i class="fab fa-whatsapp"></i>
+                                                </a>
+                                            </div>
+                                            <strong class="cpy-right">Copyright &copy; Masud Rana,<span class="m-1"> All rights
+                                            reserved.</span></strong>
+                                        </footer>
+                                        <!-- /.contact section -->
+                                    </main>
+                                    <!-- /contact section -->
+                                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                                    crossorigin="anonymous"></script>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+                                    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+                                    <script>
+                                    AOS.init();
+                                    </script>
+                                    <script src="js/app.js"></script>
+                                </body>
+                            </html>

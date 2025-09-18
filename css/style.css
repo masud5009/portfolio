@@ -10,7 +10,7 @@
 }
 
 :root {
-    --main-color: #64ffda;
+    --primary-color: #64ffda;
     --bg-color: #0a192f;
     --f1-color: rgb(38, 170, 247);
     --f2-color: #8892b0;
@@ -35,7 +35,7 @@ body {
     background: var(--bg-color);
 }
 .text-primary{
-    color: var(--main-color) !important;
+    color: var(--primary-color) !important;
 }
 #home-section {
     min-height: calc(100vh - 2rem);
@@ -110,7 +110,7 @@ body {
     height: 1.6px;
     height: .1rem;
     width: 0;
-    background: var(--main-color);
+    background: var(--primary-color);
     position: absolute;
     -webkit-transition: ease .40s;
     transition: ease .40s;
@@ -127,7 +127,7 @@ body {
 }
 
 .navbar a:hover {
-    color: var(--main-color);
+    color: var(--primary-color);
 }
 
 #cvBtn {
@@ -144,7 +144,7 @@ body {
     content: "";
     width: 0%;
     height: 100%;
-    background: var(--main-color);
+    background: var(--primary-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -170,7 +170,7 @@ body {
 }
 
 .navbar-brand:hover {
-    color: var(--main-color);
+    color: var(--primary-color);
 }
 
 
@@ -204,7 +204,7 @@ body {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
     color: var(--footer-color) !important;
 }
 
@@ -245,7 +245,7 @@ body {
 }
 
 .project-card .card-body .card-title a {
-    color: var(--main-color) !important;
+    color: var(--primary-color) !important;
 }
 
 #contact-section {
@@ -299,7 +299,7 @@ body {
 
 .self-about .say-hello h1 {
     font-size: var(--extra-sm);
-    color: var(--main-color);
+    color: var(--primary-color);
 }
 
 .self-about .say-name h2 {
@@ -337,7 +337,7 @@ body {
     content: "";
     width: 0%;
     height: 100%;
-    background: var(--main-color);
+    background: var(--primary-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -413,7 +413,7 @@ body {
 }
 
 .title h1 {
-    color: var(--main-color);
+    color: var(--primary-color);
     font-weight: 400;
     padding: 5px;
     position: relative;
@@ -437,14 +437,7 @@ body {
 }
 
 /* skill section */
-.programing-laguage svg {
-    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: .5s;
-}
-
-.skill .card {
+ .skill .card {
     background-color: #112240;
     color: var(--f2-color);
     box-shadow: 0 10px 30px -15px rgba(1, 12, 27, 0.7);
@@ -455,6 +448,25 @@ body {
     transition: ease .50s;
     margin-top: 10px;
 }
+ .skill .card .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.skill .card .content .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+ .skill .programing-laguage svg {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+
 
 .card:hover .programing-laguage svg {
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" /></filter></svg>#filter');
@@ -466,12 +478,45 @@ body {
     color: var(--font-color);
 }
 
-.card:hover {
+#skill-section .card:hover {
     -webkit-transform: translateY(-1rem);
     transform: scale(1.1);
 }
 
 /* project section css*/
+
+.project-section .card{
+    background-color: #112240;
+  color: var(--f2-color);
+  box-shadow: 0 10px 30px -15px rgba(1, 12, 27, 0.7);
+  padding: 0px;
+  max-height: 400px;
+  -webkit-transition: ease .50s;
+  transition: ease .50s;
+  margin-top: 10px;
+}
+.project-section .card .card-title{
+    color: #fff;
+     overflow: hidden;
+     display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.project-section .card .card-text{
+      overflow: hidden;
+      text-overflow:ellipsis;
+    font-size: 14px;
+      display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.project-section .bg-success{
+    background-color: var(--primary-color) !important;
+    color: #112240 !important;
+    padding: 10px !important;
+    font-size: 12px !important;
+    border-radius: 17px;
+}
 #blog,
 #pos,
 #ecom {
@@ -596,7 +641,7 @@ body {
 
 .project-btn:before {
     content: "▹";
-    color: var(--main-color);
+    color: var(--primary-color);
     font-size: var(--extra-sm);
     position: relative;
     top: 3px;
@@ -632,7 +677,7 @@ body {
 
 /* contact section css*/
 .contact-title {
-    color: var(--main-color);
+    color: var(--primary-color);
     margin-bottom: 32px;
     margin-bottom: 2rem;
 }
@@ -658,7 +703,7 @@ body {
     content: "";
     width: 0%;
     height: 100%;
-    background: var(--main-color);
+    background: var(--primary-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -704,7 +749,7 @@ footer {
 .footer-icon a {
     width: 50px;
     height: 50px;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--primary-color);
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -798,7 +843,7 @@ footer {
 
 .footer-icon i {
     font-size: 20px;
-    color: var(--main-color);
+    color: var(--primary-color);
 }
 
 .footer-icon i:hover {
@@ -852,7 +897,7 @@ footer .cpy-right span {
 }
 
 .offcanvas-header {
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
 }
 
 .offcanvas-title {
