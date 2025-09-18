@@ -511,8 +511,8 @@ body {
   -webkit-box-orient: vertical;
 }
 .project-section .bg-success{
-    background-color: var(--primary-color) !important;
-    color: #112240 !important;
+    background: #199c21 !important;
+    color: #fff !important;
     padding: 10px !important;
     font-size: 12px !important;
     border-radius: 17px;
