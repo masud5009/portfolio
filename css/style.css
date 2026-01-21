@@ -490,7 +490,7 @@ body {
   color: var(--f2-color);
   box-shadow: 0 10px 30px -15px rgba(1, 12, 27, 0.7);
   padding: 0px;
-  max-height: 400px;
+  max-height: 420px;
   -webkit-transition: ease .50s;
   transition: ease .50s;
   margin-top: 10px;
