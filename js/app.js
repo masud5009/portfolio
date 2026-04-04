@@ -4,7 +4,9 @@ const menuToggle = document.querySelector('#menu-toggle');
 const menuClose = document.querySelector('#menu-close');
 const menuBackdrop = document.querySelector('#mobile-menu-backdrop');
 const mobileLinks = document.querySelectorAll('.mobile-nav-anchor');
+const preloader = document.querySelector('#page-preloader');
 const body = document.body;
+let preloaderDismissed = false;
 
 const syncHeaderState = () => {
     if (!header) return;
@@ -27,6 +29,24 @@ const closeMenu = () => {
     body.classList.remove('mobile-menu-open');
 };
 
+const dismissPreloader = () => {
+    if (!body || preloaderDismissed) {
+        body?.classList.remove('preloading');
+        return;
+    }
+
+    preloaderDismissed = true;
+    body.classList.remove('preloading');
+
+    if (!preloader) return;
+
+    preloader.classList.add('is-hidden');
+
+    window.setTimeout(() => {
+        preloader.remove();
+    }, 900);
+};
+
 window.addEventListener('scroll', syncHeaderState, { passive: true });
 syncHeaderState();
 
@@ -42,6 +62,20 @@ document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
         closeMenu();
     }
+});
+
+if (document.readyState === 'complete') {
+    window.setTimeout(dismissPreloader, 320);
+} else {
+    window.addEventListener('load', () => {
+        window.setTimeout(dismissPreloader, 320);
+    }, { once: true });
+
+    window.setTimeout(dismissPreloader, 3600);
+}
+
+window.addEventListener('pageshow', () => {
+    dismissPreloader();
 });
 
 if (typeof Typed !== 'undefined' && document.querySelector('#typing')) {

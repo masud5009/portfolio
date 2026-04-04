@@ -36,7 +36,28 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-ink font-sans text-textsoft antialiased selection:bg-accent selection:text-ink">
+<body class="preloading bg-ink font-sans text-textsoft antialiased selection:bg-accent selection:text-ink">
+    <div id="page-preloader" class="page-preloader" aria-hidden="true">
+        <div class="page-preloader__grid"></div>
+        <div class="page-preloader__inner">
+            <span class="page-preloader__eyebrow">Loading Portfolio</span>
+            <div class="page-preloader__mark">
+                <span class="page-preloader__ring"></span>
+                <span class="page-preloader__ring page-preloader__ring--offset"></span>
+                <span class="page-preloader__spark page-preloader__spark--one"></span>
+                <span class="page-preloader__spark page-preloader__spark--two"></span>
+                <span class="page-preloader__logo">M.R</span>
+            </div>
+            <div class="page-preloader__bar" aria-hidden="true">
+                <span class="page-preloader__bar-fill"></span>
+            </div>
+            <div class="page-preloader__dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
     <div class="pointer-events-none fixed inset-0 -z-20 overflow-hidden">
         <div class="hero-orb hero-orb-one"></div>
         <div class="hero-orb hero-orb-two"></div>
@@ -251,11 +272,6 @@
         <section id="skill-section" class="scroll-mt-28 py-20 sm:py-24">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="section-label" data-aos="fade-up">Skill Set</div>
-                <p class="mx-auto mt-6 max-w-3xl text-center text-base leading-8 text-muted sm:text-lg" data-aos="fade-up"
-                    data-aos-delay="100">
-                    A lighter, more expressive card system for the tools I use most, with hover depth, floating
-                    accents, and a modern marketplace-style finish.
-                </p>
                 <div id="skill-cards-root" class="mt-12" aria-live="polite"></div>
             </div>
         </section>
