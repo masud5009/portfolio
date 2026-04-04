@@ -251,50 +251,12 @@
         <section id="skill-section" class="scroll-mt-28 py-20 sm:py-24">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="section-label" data-aos="fade-up">Skill Set</div>
-
-                <div class="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-                    <article class="skill-card group" data-aos="fade-up" data-aos-delay="100">
-                        <i class="fab fa-laravel skill-icon text-[3.5rem] text-[#FF2D20]"></i>
-                        <h3 class="mt-5 text-2xl font-semibold text-white">Laravel</h3>
-                    </article>
-                    <article class="skill-card group" data-aos="fade-up" data-aos-delay="150">
-                        <i class="fab fa-php skill-icon text-[3.5rem] text-[#777BB4]"></i>
-                        <h3 class="mt-5 text-2xl font-semibold text-white">PHP</h3>
-                    </article>
-                    <article class="skill-card group" data-aos="fade-up" data-aos-delay="200">
-                        <i class="fab fa-js-square skill-icon text-[3.5rem] text-[#F7DF1E]"></i>
-                        <h3 class="mt-5 text-2xl font-semibold text-white">JavaScript</h3>
-                    </article>
-                    <article class="skill-card group" data-aos="fade-up" data-aos-delay="250">
-                        <i class="fas fa-plug skill-icon text-[3.5rem] text-sky-400"></i>
-                        <h3 class="mt-5 text-2xl font-semibold text-white">API Development</h3>
-                    </article>
-                    <article class="skill-card group" data-aos="fade-up" data-aos-delay="300">
-                        <i class="fas fa-database skill-icon text-[3.5rem] text-[#00758F]"></i>
-                        <h3 class="mt-5 text-2xl font-semibold text-white">MySQL</h3>
-                    </article>
-                    <article class="skill-card group" data-aos="fade-up" data-aos-delay="350">
-                        <i class="fab fa-vuejs skill-icon text-[3.5rem] text-[#42b883]"></i>
-                        <h3 class="mt-5 text-2xl font-semibold text-white">Vue.js</h3>
-                    </article>
-                    <article class="skill-card group" data-aos="fade-up" data-aos-delay="400">
-                        <i class="fab fa-html5 skill-icon text-[3.5rem] text-[#E34F26]"></i>
-                        <h3 class="mt-5 text-2xl font-semibold text-white">HTML5</h3>
-                    </article>
-                    <article class="skill-card group" data-aos="fade-up" data-aos-delay="450">
-                        <i class="fab fa-css3-alt skill-icon text-[3.5rem] text-[#1572B6]"></i>
-                        <h3 class="mt-5 text-2xl font-semibold text-white">CSS3</h3>
-                    </article>
-                    <article class="skill-card group" data-aos="fade-up" data-aos-delay="500">
-                        <div class="skill-icon inline-flex h-16 w-16 items-center justify-center text-sky-400">
-                            <svg viewBox="0 0 54 33" xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 fill-current">
-                                <path
-                                    d="M27 0C19.8 0 15.3 3.6 13.5 10.8C16.2 7.2 19.35 5.85 22.95 6.75C25.005 7.263 26.478 8.754 28.109 10.404C30.764 13.091 33.837 16.2 40.5 16.2C47.7 16.2 52.2 12.6 54 5.4C51.3 9 48.15 10.35 44.55 9.45C42.495 8.937 41.022 7.446 39.391 5.796C36.736 3.109 33.663 0 27 0ZM13.5 16.2C6.3 16.2 1.8 19.8 0 27C2.7 23.4 5.85 22.05 9.45 22.95C11.505 23.463 12.978 24.954 14.609 26.604C17.264 29.291 20.337 32.4 27 32.4C34.2 32.4 38.7 28.8 40.5 21.6C37.8 25.2 34.65 26.55 31.05 25.65C28.995 25.137 27.522 23.646 25.891 21.996C23.236 19.309 20.163 16.2 13.5 16.2Z" />
-                            </svg>
-                        </div>
-                        <h3 class="mt-5 text-2xl font-semibold text-white">Tailwind CSS</h3>
-                    </article>
-                </div>
+                <p class="mx-auto mt-6 max-w-3xl text-center text-base leading-8 text-muted sm:text-lg" data-aos="fade-up"
+                    data-aos-delay="100">
+                    A lighter, more expressive card system for the tools I use most, with hover depth, floating
+                    accents, and a modern marketplace-style finish.
+                </p>
+                <div id="skill-cards-root" class="mt-12" aria-live="polite"></div>
             </div>
         </section>
 
@@ -486,6 +448,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/skill-cards.js"></script>
 </body>
 
 </html>

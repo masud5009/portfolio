@@ -186,6 +186,173 @@ body {
     transform: scale(1.06);
 }
 
+.skill-showcase-card {
+    opacity: 0;
+    transform: translate3d(0, 46px, 0) scale(0.97);
+    background:
+        linear-gradient(180deg, rgba(17, 34, 64, 0.96), rgba(10, 25, 47, 0.98));
+    box-shadow:
+        0 18px 50px rgba(2, 12, 27, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    transform-style: preserve-3d;
+    will-change: transform, opacity;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.45s ease,
+        border-color 0.45s ease;
+}
+
+.skill-showcase-card.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+}
+
+.skill-showcase-card.is-active {
+    transform: translate3d(0, -16px, 0) scale(1.05);
+    box-shadow:
+        0 30px 80px rgba(2, 12, 27, 0.55),
+        0 0 0 1px color-mix(in srgb, var(--skill-from) 22%, rgba(255, 255, 255, 0.08));
+}
+
+.skill-showcase-card__depth {
+    transform-style: preserve-3d;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.skill-showcase-card__topline {
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--skill-from) 90%, white) 18%, color-mix(in srgb, var(--skill-to) 90%, white) 78%, transparent);
+    opacity: 0.8;
+}
+
+.skill-showcase-card__overlay {
+    background:
+        radial-gradient(circle at top left, color-mix(in srgb, var(--skill-from) 28%, transparent) 0%, transparent 34%),
+        linear-gradient(165deg, color-mix(in srgb, var(--skill-from) 16%, transparent) 0%, rgba(255, 255, 255, 0) 48%, color-mix(in srgb, var(--skill-to) 14%, transparent) 100%);
+    opacity: 0.92;
+    transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+.skill-showcase-card.is-active .skill-showcase-card__overlay {
+    opacity: 1;
+    filter: saturate(1.12) brightness(1.04);
+}
+
+.skill-showcase-card__glow {
+    background: radial-gradient(circle, color-mix(in srgb, var(--skill-to) 42%, transparent) 0%, color-mix(in srgb, var(--skill-from) 24%, transparent) 34%, transparent 72%);
+    opacity: 0.48;
+    transition: transform 0.4s ease, opacity 0.4s ease, scale 0.4s ease;
+}
+
+.skill-showcase-card.is-active .skill-showcase-card__glow {
+    opacity: 0.84;
+}
+
+.skill-showcase-card__icon {
+    transform: translateZ(24px);
+    filter: drop-shadow(0 18px 30px rgba(2, 12, 27, 0.34));
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), filter 0.4s ease;
+}
+
+.skill-showcase-card.is-active .skill-showcase-card__icon {
+    transform: translateZ(24px) scale(1.1) rotate(-8deg);
+    filter: drop-shadow(0 24px 36px color-mix(in srgb, var(--skill-from) 20%, rgba(2, 12, 27, 0.35)));
+}
+
+.skill-showcase-card__icon-panel {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: linear-gradient(135deg, var(--skill-from) 0%, var(--skill-to) 100%);
+    box-shadow:
+        0 22px 40px color-mix(in srgb, var(--skill-from) 26%, rgba(2, 12, 27, 0.24)),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.skill-showcase-card__icon-core {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.35rem;
+    width: 4.35rem;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 24px;
+    background: rgba(10, 25, 47, 0.2);
+    color: #fff;
+    font-size: 2.2rem;
+    backdrop-filter: blur(6px);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.skill-showcase-card__icon-core .fa-laravel {
+    font-size: 2rem;
+}
+
+.skill-showcase-card__icon-core .fa-php,
+.skill-showcase-card__icon-core .fa-js-square,
+.skill-showcase-card__icon-core .fa-vuejs,
+.skill-showcase-card__icon-core .fa-html5,
+.skill-showcase-card__icon-core .fa-css3-alt {
+    font-size: 2.25rem;
+}
+
+.skill-showcase-card__icon-core .fa-plug,
+.skill-showcase-card__icon-core .fa-database {
+    font-size: 2rem;
+}
+
+.skill-showcase-card__icon-svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: currentColor;
+}
+
+.skill-showcase-card__icon-dot {
+    position: absolute;
+    border-radius: 999px;
+}
+
+.skill-showcase-card__icon-dot--top {
+    right: -0.35rem;
+    top: 0.65rem;
+    height: 0.85rem;
+    width: 0.85rem;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.12);
+}
+
+.skill-showcase-card__icon-dot--bottom {
+    bottom: 0.7rem;
+    left: -0.45rem;
+    height: 1rem;
+    width: 1rem;
+    background: rgba(10, 25, 47, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.skill-showcase-card__chip {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(10, 25, 47, 0.62);
+    color: #a9b7d7;
+    backdrop-filter: blur(10px);
+}
+
+.skill-showcase-card__title {
+    color: #f8fbff;
+    text-shadow: 0 4px 18px rgba(2, 12, 27, 0.18);
+}
+
+.skill-showcase-card__description {
+    color: #92a4c6;
+}
+
 .project-card {
     display: flex;
     height: 100%;
@@ -300,5 +467,23 @@ body.mobile-menu-open {
     .project-badge {
         left: 1rem;
         right: auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skill-showcase-card,
+    .skill-showcase-card.is-visible,
+    .skill-showcase-card.is-active {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .skill-showcase-card__depth,
+    .skill-showcase-card__glow,
+    .skill-showcase-card__icon,
+    .skill-showcase-card__overlay {
+        transform: none;
+        transition: none;
     }
 }
