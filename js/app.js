@@ -1,68 +1,64 @@
-// navbar scrolled js
-const navbar = document.querySelector('.navbar');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        navbar.classList.add('navbar-scrolled');
-    } else {
-        navbar.classList.remove('navbar-scrolled');
+const header = document.querySelector('#site-header');
+const menu = document.querySelector('#mobile-menu');
+const menuToggle = document.querySelector('#menu-toggle');
+const menuClose = document.querySelector('#menu-close');
+const menuBackdrop = document.querySelector('#mobile-menu-backdrop');
+const mobileLinks = document.querySelectorAll('.mobile-nav-anchor');
+const body = document.body;
+
+const syncHeaderState = () => {
+    if (!header) return;
+    header.classList.toggle('header-scrolled', window.scrollY > 24);
+};
+
+const openMenu = () => {
+    if (!menu || !menuToggle) return;
+    menu.classList.add('is-open');
+    menu.setAttribute('aria-hidden', 'false');
+    menuToggle.setAttribute('aria-expanded', 'true');
+    body.classList.add('mobile-menu-open');
+};
+
+const closeMenu = () => {
+    if (!menu || !menuToggle) return;
+    menu.classList.remove('is-open');
+    menu.setAttribute('aria-hidden', 'true');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    body.classList.remove('mobile-menu-open');
+};
+
+window.addEventListener('scroll', syncHeaderState, { passive: true });
+syncHeaderState();
+
+menuToggle?.addEventListener('click', openMenu);
+menuClose?.addEventListener('click', closeMenu);
+menuBackdrop?.addEventListener('click', closeMenu);
+
+mobileLinks.forEach((link) => {
+    link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        closeMenu();
     }
 });
 
-// project showing js
-$(document).ready(function () {
-    $('.project-btn').on('click', function () {
-        var target = $(this).data('target');
-        $("#" + target).toggle();
-        $(".project-info").not("#" + target).hide();
-
+if (typeof Typed !== 'undefined' && document.querySelector('#typing')) {
+    new Typed('#typing', {
+        strings: ['Web Developer.', 'Laravel Engineer.', 'Problem Solver.'],
+        typeSpeed: 90,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true,
+        showCursor: true
     });
-});
+}
 
-// typging animation
-var options = {
-    strings: ["Web Designer.", "Programmer.", "Web Developer."],
-    typeSpeed: 100,
-    backSpeed: 25,
-    startDelay: 0,
-    backDelay: 1500,
-    loop: true,
-    showCursor: true,
-};
-
-new Typed("#typing", options);
-
-
-$(document).ready(function () {
-    $('.slider-container').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+if (typeof AOS !== 'undefined') {
+    AOS.init({
+        duration: 700,
+        once: true,
+        offset: 40
     });
-});
+}
