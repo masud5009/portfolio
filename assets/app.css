@@ -1,0 +1,249 @@
+/* ===================================
+   CUSTOM ANIMATIONS & UTILITIES
+   =================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* ===================================
+   SCROLLBAR STYLING
+   =================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* ===================================
+   SMOOTH SCROLL BEHAVIOR
+   =================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Supports smooth scroll in all modern browsers */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ===================================
+   TEXT SELECTION
+   =================================== */
+
+::selection {
+  background: rgba(94, 234, 212, 0.24);
+  color: #f8fafc;
+}
+
+::-moz-selection {
+  background: rgba(94, 234, 212, 0.24);
+  color: #f8fafc;
+}
+
+/* ===================================
+   LINK ANIMATIONS
+   =================================== */
+
+a {
+  position: relative;
+}
+
+/* ===================================
+   FOCUS STATES FOR ACCESSIBILITY
+   =================================== */
+
+button:focus-visible,
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.1), 0 0 0 6px rgba(94, 234, 212, 0.2);
+}
+
+/* ===================================
+   LOADING STATES
+   =================================== */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fade in loaded images */
+img[loading="lazy"] {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* ===================================
+   CARD HOVER EFFECTS
+   =================================== */
+
+.glass-border {
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.glass-border:hover {
+  border-color: rgba(94, 234, 212, 0.2);
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================================
+   BUTTON ANIMATIONS
+   =================================== */
+
+button,
+a[class*="flex"][class*="items-center"][class*="justify-center"][class*="rounded-md"] {
+  transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ===================================
+   CODE-LIKE STYLING
+   =================================== */
+
+code {
+  font-family: "Menlo", "Monaco", "Courier New", monospace;
+  font-size: 0.875em;
+}
+
+/* ===================================
+   FORM STYLES
+   =================================== */
+
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(94, 234, 212, 0.3);
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ===================================
+   BACKDROP BLUR SUPPORT
+   =================================== */
+
+@supports (backdrop-filter: blur(1px)) {
+  .backdrop-blur-xl {
+    backdrop-filter: blur(12px);
+  }
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  .backdrop-blur-xl {
+    background: rgba(5, 7, 10, 0.95);
+  }
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  header,
+  footer {
+    display: none;
+  }
+}
+
+/* ===================================
+   REDUCED MOTION
+   =================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===================================
+   RESPONSIVE TEXT SCALING
+   =================================== */
+
+@media (max-width: 640px) {
+  h1 {
+    line-height: 1.1;
+  }
+
+  h2 {
+    line-height: 1.2;
+  }
+}
+
+/* ===================================
+   UTILITY ANIMATIONS
+   =================================== */
+
+.animate-fade-in {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
