@@ -462,3 +462,19 @@ html.light footer {
   border-top-color: #e2e8f0 !important;
 }
 
+/* ===================================
+   LIGHT MODE SELECTION STYLES
+   =================================== */
+
+html.light ::selection,
+html.light *::selection {
+  background-color: #0d9488 !important;
+  color: #ffffff !important;
+}
+
+html.light ::-moz-selection,
+html.light *::-moz-selection {
+  background-color: #0d9488 !important;
+  color: #ffffff !important;
+}
+
