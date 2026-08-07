@@ -4,6 +4,51 @@
  */
 
 // ===================================
+// LIGHT / DARK THEME TOGGLE
+// ===================================
+
+function initThemeToggle() {
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const sunIcon = document.getElementById('theme-toggle-sun');
+  const moonIcon = document.getElementById('theme-toggle-moon');
+
+  if (!themeToggleBtn) return;
+
+  function updateIcons(isLight) {
+    if (isLight) {
+      sunIcon?.classList.remove('hidden');
+      moonIcon?.classList.add('hidden');
+      themeToggleBtn.setAttribute('aria-label', 'Switch to dark theme');
+      themeToggleBtn.setAttribute('title', 'Switch to dark theme');
+    } else {
+      sunIcon?.classList.add('hidden');
+      moonIcon?.classList.remove('hidden');
+      themeToggleBtn.setAttribute('aria-label', 'Switch to light theme');
+      themeToggleBtn.setAttribute('title', 'Switch to light theme');
+    }
+  }
+
+  // Sync icons with current HTML root class
+  const isLightInitial = document.documentElement.classList.contains('light');
+  updateIcons(isLightInitial);
+
+  themeToggleBtn.addEventListener('click', () => {
+    const isLightNow = document.documentElement.classList.contains('light');
+    if (isLightNow) {
+      document.documentElement.classList.remove('light');
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+      updateIcons(false);
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light');
+      localStorage.setItem('theme', 'light');
+      updateIcons(true);
+    }
+  });
+}
+
+// ===================================
 // MOBILE MENU TOGGLE
 // ===================================
 
@@ -196,6 +241,7 @@ function initPortfolio() {
   }
 
   function init() {
+    initThemeToggle();
     initMobileMenu();
     initSmoothScroll();
     initScrollProgress();
@@ -215,6 +261,7 @@ initPortfolio();
 
 if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
   window.__portfolio__ = {
+    initThemeToggle,
     initMobileMenu,
     initSmoothScroll,
     initScrollProgress,
