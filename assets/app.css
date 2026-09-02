@@ -437,10 +437,6 @@ html.light #projects .mt-6.flex.gap-3.text-sm a {
   box-shadow: none !important;
 }
 
-html.light #projects .mt-6.flex.gap-3.text-sm a:first-child::before {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05) !important;
-}
-
 html.light #projects .mt-6.flex.gap-3.text-sm a:last-child {
   border-color: rgba(20, 184, 166, 0.35) !important;
   background: rgba(20, 184, 166, 0.1) !important;

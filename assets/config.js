@@ -23,10 +23,10 @@ const CONFIG = {
   
   // Social profiles
   social: {
-    github: "https://github.com/yourusername",
-    linkedin: "https://www.linkedin.com/in/yourusername",
-    twitter: "https://twitter.com/yourusername", // Optional
-    website: "https://yourdomain.com"             // Optional
+    github: "https://github.com/masud5009",
+    linkedin: "https://www.linkedin.com/in/masud5009",
+    facebook: "https://www.facebook.com/masud5009",
+    whatsapp: "https://wa.me/8801306084771"
   },
   
   // SEO and metadata
@@ -73,36 +73,69 @@ const SKILLS = [
 
 const PROJECTS = [
   {
-    id: "api-gateway",
-    title: "Atlas API Gateway",
-    description: "Multi-tenant gateway with authentication, request throttling, audit logs, and service-level telemetry.",
-    image: "assets/project-api-gateway.png",
-    tags: ["Node.js", "Redis", "PostgreSQL"],
+    id: "whatstay",
+    title: "WhatStay - WhatsApp AI Assistant (SaaS)",
+    description: "Multi-tenant SaaS for automated hotel bookings and guest messaging powered by AI.",
+    image: "assets/project/whatstay.png",
+    tags: ["Laravel", "Meta Graph API", "AI Integration", "MySQL"],
     links: {
-      github: "https://github.com/yourusername/atlas-api-gateway",
-      demo: "https://example.com"
+      github: "https://github.com/masud5009/whtsbook",
+      demo: "https://codecanyon.net/item/whatstay-whatsapp-ai-assistant-for-hotel-booking-automation-saas/63506642"
     }
   },
   {
-    id: "billing",
-    title: "Nimbus Billing",
-    description: "Usage metering and subscription billing service with invoices, webhooks, retries, and admin reporting.",
-    image: "assets/project-billing.png",
-    tags: ["TypeScript", "Stripe", "Queues"],
+    id: "bookapp",
+    title: "Bookapp - Service Booking Marketplace (SaaS)",
+    description: "Multivendor booking SaaS with geolocation search, calendar syncing, and automated scheduling workflows.",
+    image: "assets/project/bookapp.png",
+    tags: ["Laravel", "REST APIs", "Google Maps / Geo", "Payment Gateways"],
     links: {
-      github: "https://github.com/yourusername/nimbus-billing",
-      demo: "https://example.com"
+      github: "https://github.com/masud5009/bookapp",
+      demo: "https://codecanyon.net/item/bookapp-multivendor-service-appointment-booking-laravel-website-subscription-based/54240416?s_rank=9"
     }
   },
   {
-    id: "ops",
-    title: "ForgeOps Automation",
-    description: "Deployment automation platform with worker queues, blue-green rollout checks, and traceable releases.",
-    image: "assets/project-ops.png",
-    tags: ["Docker", "AWS", "Workers"],
+    id: "ecommet",
+    title: "Ecommet – Multitenant Ecommerce Builder",
+    description: "White-label multi-tenant ecommerce builder with custom domains, multilingual support, and automated store setups.",
+    image: "assets/project/ecommet.png",
+    tags: ["Laravel", "Multi-tenancy", "REST APIs", "MySQL"],
     links: {
-      github: "https://github.com/yourusername/forgeops-automation",
-      demo: "https://example.com"
+      github: "https://github.com/masud5009/ecommet",
+      demo: "https://codecanyon.net/item/ecommet-multitenant-ecommerce-website-saas/57240303?s_rank=6"
+    }
+  },
+  {
+    id: "renteq",
+    title: "RentEq – Equipment Rental SaaS",
+    description: "Equipment rental SaaS platform with geolocation maps, AWS S3 storage, and real-time inventory reservations.",
+    image: "assets/project/rentqu.png",
+    tags: ["Laravel", "AWS S3", "Multi-tenancy", "Vue.js"],
+    links: {
+      github: "https://github.com/masud5009/renteq",
+      demo: "https://codecanyon.net/item/renteq-saas-multipurpose-rental-website-builder-multitenant/60117644?s_rank=15"
+    }
+  },
+  {
+    id: "ticket",
+    title: "Event Ticket Booking Marketplace",
+    description: "High-capacity event marketplace with seat selection, organizer tooling, and scalable checkout processing.",
+    image: "assets/project/ticket.png",
+    tags: ["Laravel", "Ticketing Logic", "REST APIs", "MySQL"],
+    links: {
+      gitlab: "https://gitlab.com/evento2/evento",
+      demo: "https://altoketicket.com.pe/"
+    }
+  },
+  {
+    id: "prokitirswad",
+    title: "Prokitir Swad — Organic Food Platform",
+    description: "Direct-to-consumer organic food eCommerce platform featuring dynamic catalogs, product search, order tracking, and checkout flows.",
+    image: "assets/project/prokitirswad.png",
+    tags: ["Laravel", "E-Commerce", "Payment Gateways", "MySQL"],
+    links: {
+      contact: "#contact",
+      demo: "https://prokitirswad.com/"
     }
   }
 ];
@@ -113,22 +146,22 @@ const PROJECTS = [
 
 const EXPERIENCE = [
   {
-    title: "Senior Backend Developer",
-    company: "SaaS Platform Team",
-    period: "2023 - Present",
-    description: "Built API services, background jobs, and data workflows for multi-tenant SaaS products with strong observability and release discipline."
+    title: "Laravel Developer",
+    company: "KreativDev — Full-Time Backend Engineering",
+    period: "Nov 2023 – Present",
+    description: "Full-time backend engineering focusing on core engines, secure APIs, and production platforms."
   },
   {
-    title: "Backend Engineer",
-    company: "Product Engineering",
-    period: "2020 - 2023",
-    description: "Delivered REST APIs, database migrations, integrations, and internal tools for fast-moving product teams."
+    title: "Laravel Developer Intern",
+    company: "PeopleNTech Institute of IT — MVC Architecture & Backend APIs",
+    period: "Sep 2023 – Nov 2023",
+    description: "Contributed to Laravel web applications, MVC architecture, Blade views, and backend REST APIs."
   },
   {
-    title: "Freelance Backend Developer",
-    company: "Client Projects",
-    period: "2018 - 2020",
-    description: "Shipped MVP APIs, admin dashboards, payment integrations, and deployment setups for early-stage products."
+    title: "Remote Web Developer",
+    company: "CodeVibes — Web Application Features & Integrations",
+    period: "5 Months",
+    description: "Web application features, responsive workflows, and client-facing integrations."
   }
 ];
 
