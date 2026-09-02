@@ -1,0 +1,21 @@
+<svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+  <defs>
+    <!-- Linear Gradient matching Figma mockup: top-right magenta/pink to bottom-left purple/indigo -->
+    <linearGradient id="userBlobGrad" x1="85%" y1="15%" x2="15%" y2="85%">
+      <stop offset="0%" stop-color="#f026d3" />
+      <stop offset="30%" stop-color="#d946ef" />
+      <stop offset="70%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <!-- Ambient outer glow -->
+    <filter id="blobGlowFilter" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="45" result="blur" />
+    </filter>
+  </defs>
+  <!-- Atmospheric soft background glow -->
+  <path d="M 160,25 C 330,25 475,85 475,190 C 475,320 330,475 160,475 C 75,475 25,320 25,190 C 25,85 75,25 160,25 Z" 
+        fill="url(#userBlobGrad)" opacity="0.45" filter="url(#blobGlowFilter)" />
+  <!-- Crisp foreground organic fluid shape -->
+  <path d="M 160,25 C 330,25 475,85 475,190 C 475,320 330,475 160,475 C 75,475 25,320 25,190 C 25,85 75,25 160,25 Z" 
+        fill="url(#userBlobGrad)" />
+</svg>

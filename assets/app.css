@@ -31,6 +31,20 @@
   }
 }
 
+@keyframes blobFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg) scale(1.02);
+  }
+}
+
+.animate-blob-float {
+  animation: blobFloat 8s ease-in-out infinite;
+  transform-origin: center center;
+}
+
 /* ===================================
    SCROLLBAR STYLING
    =================================== */
@@ -474,3 +488,10 @@ html.light *::-moz-selection {
   color: #ffffff !important;
 }
 
+/* ===================================
+   HERO BLOB LIGHT MODE
+   =================================== */
+
+html.light .hero-blob-fill {
+  fill: #f8fafc !important;
+}
